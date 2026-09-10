@@ -38,9 +38,10 @@ jobs:
 
       - name: Build Tailwind CSS
         run: |
+          npm install --no-save tailwindcss@4.3.3 @tailwindcss/cli@4.3.3
           mkdir -p _site
           cp index.html 404.html _site/
-          npx --yes @tailwindcss/cli@4 -i ./src/input.css -o ./_site/styles.css --minify
+          npx @tailwindcss/cli -i ./src/input.css -o ./_site/styles.css --minify
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
