@@ -1,0 +1,43 @@
+name: Validate TORAM Provenance Site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - index.html
+      - 404.html
+      - src/**
+      - .github/workflows/validate-site.yml
+  pull_request:
+    paths:
+      - index.html
+      - 404.html
+      - src/**
+      - .github/workflows/validate-site.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile Tailwind CSS
+        run: |
+          mkdir -p _site
+          cp index.html 404.html _site/
+          npx --yes @tailwindcss/cli@4 -i ./src/input.css -o ./_site/styles.css --minify
+
+      - name: Validate site artifact
+        run: |
+          test -s _site/index.html
+          test -s _site/404.html
+          test -s _site/styles.css
+          grep -q "Intelligent Financial Market Provenance Infrastructure" _site/index.html
+          grep -q "\.bg-slate-950" _site/styles.css
+          echo "Tailwind site artifact validated."
