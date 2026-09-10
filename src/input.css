@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@source "../index.html";
+@source "../404.html";
+
+@layer base {
+  body {
+    background-image:
+      radial-gradient(circle at 8% 0%, rgba(52, 211, 153, 0.08), transparent 30rem),
+      radial-gradient(circle at 90% 12%, rgba(34, 211, 238, 0.055), transparent 34rem);
+    background-attachment: fixed;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(110 231 183);
+    outline-offset: 3px;
+  }
+}
