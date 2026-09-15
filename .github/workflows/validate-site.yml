@@ -39,17 +39,17 @@ jobs:
           test -s _site/index.html
           test -s _site/404.html
           test -s _site/styles.css
-          grep -q "TORAM — Working Financial AI Runtime" _site/index.html
-          grep -q "WORKING FINANCIAL AI RUNTIME" _site/index.html
-          grep -q "CURRENT PROOF" _site/index.html
-          grep -q "THE SCALE PATH" _site/index.html
-          grep -q "repeatable financial-runtime product" _site/index.html
-          grep -q "0% proprietary trading capital" _site/index.html
-          ! grep -q "WEATHER + CLIMATE RESPONSE" _site/index.html
-          ! grep -q "SPORTS + ATHLETE INTELLIGENCE" _site/index.html
-          ! grep -q "LOGISTICS + SUPPLY NETWORKS" _site/index.html
-          ! grep -q "AGROTECH + FARM OPERATIONS" _site/index.html
-          ! grep -q "TORAM-MAIN" _site/index.html
-          ! grep -q "TORAM-Market-Recorder" _site/index.html
+          grep -Fq "TORAM — Working Financial AI Runtime" _site/index.html
+          grep -Fq "WORKING FINANCIAL AI RUNTIME" _site/index.html
+          grep -Fq "CURRENT PROOF" _site/index.html
+          grep -Fq "THE SCALE PATH" _site/index.html
+          grep -Fq "repeatable financial-runtime product" _site/index.html
+          grep -Fq "not proprietary trading capital" _site/index.html
+          ! grep -Fq "WEATHER + CLIMATE RESPONSE" _site/index.html
+          ! grep -Fq "SPORTS + ATHLETE INTELLIGENCE" _site/index.html
+          ! grep -Fq "LOGISTICS + SUPPLY NETWORKS" _site/index.html
+          ! grep -Fq "AGROTECH + FARM OPERATIONS" _site/index.html
+          ! grep -Fq "TORAM-MAIN" _site/index.html
+          ! grep -Fq "TORAM-Market-Recorder" _site/index.html
           grep -q "\\.bg-slate-950" _site/styles.css
           echo "Simplified TORAM investor site artifact validated."
