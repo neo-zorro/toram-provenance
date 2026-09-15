@@ -39,6 +39,10 @@ jobs:
           test -s _site/index.html
           test -s _site/404.html
           test -s _site/styles.css
-          grep -q "Intelligent Financial Market Provenance Infrastructure" _site/index.html
-          grep -q "\.bg-slate-950" _site/styles.css
+          grep -q "AI-Native Runtime for Governed Predictive Infrastructure" _site/index.html
+          grep -q "WEATHER + CLIMATE RESPONSE" _site/index.html
+          grep -q "SPORTS + ATHLETE INTELLIGENCE" _site/index.html
+          grep -q "LOGISTICS + SUPPLY NETWORKS" _site/index.html
+          grep -q "AGROTECH + FARM OPERATIONS" _site/index.html
+          grep -q "\\.bg-slate-950" _site/styles.css
           echo "Tailwind site artifact validated."
