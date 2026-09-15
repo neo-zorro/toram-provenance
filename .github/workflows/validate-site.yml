@@ -43,7 +43,7 @@ jobs:
           grep -Fq "WORKING FINANCIAL AI RUNTIME" _site/index.html
           grep -Fq "CURRENT PROOF" _site/index.html
           grep -Fq "THE SCALE PATH" _site/index.html
-          grep -Fq "repeatable financial-runtime product" _site/index.html
+          grep -Fq "Repeatable financial runtime" _site/index.html
           grep -Fq "INVESTOR DILIGENCE" _site/index.html
           grep -Fq "Financing terms" _site/index.html
           ! grep -Fq "PRE-SEED" _site/index.html
