@@ -1,22 +1,61 @@
-# TORAM Provenance
+# TORAM
 
-**Intelligent Financial Market Provenance Infrastructure**
+**Working financial AI runtime → repeatable infrastructure**
 
-TORAM is building the infrastructure that makes a financial decision traceable from market reality to financial action.
+TORAM has built a governed financial AI reference runtime around NIFTY futures and options. The system connects durable market state, proprietary temporal intelligence, deterministic authority, controlled execution and replayable evidence in one operating chain.
 
-> Markets are democratized. Trustworthy financial intelligence infrastructure is not.
+The current fundraising objective is simple: **turn the hard first system into a repeatable financial-runtime product for controlled users, brokers and institutions.**
 
-## Category thesis
+## What exists today
 
-TORAM defines **Intelligent Financial Market Provenance Infrastructure** as the verifiable chain:
+The private operating stack already covers the core runtime primitives:
 
-`Market → State → Intelligence → Decision → Authority → Execution → Outcome`
+- durable live market capture and historical replay;
+- one causal decision path across live and replay;
+- deterministic capital, session, freshness and risk authority;
+- broker execution, reconciliation and decision/outcome evidence.
 
-The public site explains the problem, category, reference architecture and company vision without exposing proprietary quantitative implementation.
+The public site describes those primitives at a high level. Detailed architecture, parity evidence, broker-linked records and operating controls belong in controlled investor diligence.
+
+## Product thesis
+
+TORAM productizes the path:
+
+`Data → Intelligence → Authority → Action → Evidence`
+
+Models, feeds and action endpoints can change. The runtime contract keeps time, permission, action and evidence coherent.
+
+**Generative where useful. Deterministic where authority matters.**
+
+## Scale path
+
+1. **Prove** — harden the NIFTY reference runtime and evidence discipline.
+2. **Productize** — extract reusable contracts, capability registry, validation and financial adapters.
+3. **Distribute** — broker/institutional/pro surfaces, multi-market support and runtime/API packaging.
+
+Broader time-series verticals are long-horizon optionality, not the execution plan for the current round.
+
+## Public disclosure boundary
+
+Safe to discuss publicly:
+
+- the working financial reference-system thesis;
+- high-level data / intelligence / authority / action / evidence architecture;
+- the NIFTY futures/options proving ground;
+- live/replay discipline, fail-closed controls and evidence principles;
+- productization, distribution and fundraising roadmap.
+
+Do not publish here:
+
+- proprietary strategy formulas, thresholds, weights or calibration;
+- strategy-specific feature definitions or model artifacts;
+- raw decision-audit datasets or private broker records;
+- credentials, infrastructure addresses, internal repositories or source code;
+- unsupported, annualized or extrapolated performance claims.
 
 ## Technology
 
-The site is deliberately static and lightweight:
+This public site is deliberately static and lightweight:
 
 - semantic HTML;
 - Tailwind CSS v4, compiled at deploy time;
@@ -24,33 +63,9 @@ The site is deliberately static and lightweight:
 - GitHub Actions deployment;
 - no client-side framework or analytics dependency.
 
-The workflow builds a minimal `_site` artifact containing only the public HTML pages and minified Tailwind CSS.
-
-## Public disclosure boundary
-
-Safe to discuss publicly:
-
-- the structural market-access problem;
-- the provenance category and company vision;
-- high-level Data Authority / Decision Authority / Execution Authority separation;
-- the existence of the NIFTY 50 reference implementation;
-- founder background;
-- sourced public-market statistics.
-
-Do not publish here:
-
-- Chapter 21 formulas, weights, thresholds or calibration;
-- proprietary feature definitions that reveal implementation;
-- raw decision-audit datasets;
-- credentials, infrastructure addresses or secrets;
-- internal repositories or source code;
-- unsupported or extrapolated performance claims.
-
-## Deployment
-
 Deployment is handled by `.github/workflows/deploy-pages.yml`.
 
-For first-time GitHub Pages activation, set:
+For first-time GitHub Pages activation:
 
 **Settings → Pages → Build and deployment → Source → GitHub Actions**
 
@@ -58,4 +73,4 @@ Then run or re-run the **Deploy TORAM Provenance** workflow.
 
 ## Public purpose
 
-This repository is informational. It is not investment advice, a brokerage service, an offer of securities, or a claim of future performance.
+This repository is informational. It is not investment advice, a brokerage service, an offer of securities or a guarantee of financial performance.
