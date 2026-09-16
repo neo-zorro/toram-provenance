@@ -41,18 +41,20 @@ jobs:
           test -s _site/styles.css
           grep -Fq "THE ANSWER SHOULD HAVE TO PROVE ITSELF" _site/index.html
           grep -Fq "An answer should not win because it ranked first." _site/index.html
+          grep -Fq "Reach is not authority." _site/index.html
           grep -Fq "THE AUTHORITY CYCLE" _site/index.html
           grep -Fq "Build the system that makes the claim earn its authority." _site/index.html
+          grep -Fq "THE AUTHORITY LAYER" _site/index.html
+          grep -Fq "Do not own truth. Own the proof that lets people judge it." _site/index.html
+          grep -Fq "REVIEWS" _site/index.html
+          grep -Fq "PRODUCT CLAIMS" _site/index.html
+          grep -Fq "POSTS & MESSAGES" _site/index.html
+          grep -Fq "IMAGES & VIDEO" _site/index.html
+          grep -Fq "AI NARRATIVES" _site/index.html
+          grep -Fq "The moat is the authority graph." _site/index.html
           grep -Fq "What are the top schools in Chennai?" _site/index.html
-          grep -Fq "SUPPORTED" _site/index.html
-          grep -Fq "PARTLY SUPPORTED" _site/index.html
-          grep -Fq "CONFLICTED" _site/index.html
-          grep -Fq "UNPROVEN" _site/index.html
-          grep -Fq "STALE" _site/index.html
-          grep -Fq "Delete it." _site/index.html
-          grep -Fq "Maintain it." _site/index.html
           grep -Fq "AI DOES THE HEAVY LIFTING. EVIDENCE EARNS THE AUTHORITY." _site/index.html
-          grep -Fq "Build it. Prove it. Keep it only if it deserves to stay." _site/index.html
+          grep -Fq "Reach can spread a claim. Only evidence should strengthen its authority." _site/index.html
           ! grep -Fiq "BANKNIFTY" _site/index.html
           ! grep -Fiq "NIFTY" _site/index.html
           ! grep -Fiq "finance" _site/index.html
@@ -72,4 +74,4 @@ jobs:
           ! grep -Fq "HMAC" _site/index.html
           ! grep -Fq "QuestDB" _site/index.html
           grep -q "\\.bg-slate-950" _site/styles.css
-          echo "Public site validated as authority-cycle, domain-neutral, non-investor and non-technical."
+          echo "Public site validated as authority-layer, domain-neutral, non-investor and non-technical."
