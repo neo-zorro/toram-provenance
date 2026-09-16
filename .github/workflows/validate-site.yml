@@ -39,23 +39,26 @@ jobs:
           test -s _site/index.html
           test -s _site/404.html
           test -s _site/styles.css
-          grep -Fq "TORAM — Governed Financial Runtime" _site/index.html
-          grep -Fq "WORKING FINANCIAL RUNTIME" _site/index.html
-          grep -Fq "CURRENT PROOF" _site/index.html
-          grep -Fq "CAPABILITIES" _site/index.html
-          grep -Fq "THE SCALE PATH" _site/index.html
-          grep -Fq "Broker-linked execution exercised" _site/index.html
+          grep -Fq "TORAM — What if software could appear when you need it?" _site/index.html
+          grep -Fq "A GLIMPSE OF WHAT MAY COME NEXT" _site/index.html
+          grep -Fq "THE IDEA" _site/index.html
+          grep -Fq "YOUR JOURNEY" _site/index.html
+          grep -Fq "ONE IDEA. MANY WORLDS." _site/index.html
+          grep -Fq "THE HUMAN STAYS IN CONTROL" _site/index.html
+          grep -Fq "COMING SOON" _site/index.html
+          grep -Fq "Describe it. Use it. Decide whether it deserves to stay." _site/index.html
           ! grep -Fq "INVESTOR DILIGENCE" _site/index.html
           ! grep -Fq "Investors" _site/index.html
-          ! grep -Fq "WHAT SEED CAPITAL BUILDS" _site/index.html
-          ! grep -Fq "Seed productization" _site/index.html
-          ! grep -Fq "THE FIRST COMMERCIAL WEDGE" _site/index.html
+          ! grep -Fq "SEED" _site/index.html
           ! grep -Fq "BUSINESS MODEL" _site/index.html
           ! grep -Fq "PRE-SEED" _site/index.html
           ! grep -Fq "€1.5M" _site/index.html
-          ! grep -Fq "18–24 months" _site/index.html
-          ! grep -Fq "This funding round" _site/index.html
           ! grep -Fq "TORAM-MAIN" _site/index.html
           ! grep -Fq "TORAM-Market-Recorder" _site/index.html
+          ! grep -Fq "CloudExecution" _site/index.html
+          ! grep -Fq "WebSocket" _site/index.html
+          ! grep -Fq "WAL" _site/index.html
+          ! grep -Fq "HMAC" _site/index.html
+          ! grep -Fq "QuestDB" _site/index.html
           grep -q "\\.bg-slate-950" _site/styles.css
-          echo "Public TORAM site validated as product/technology narrative only."
+          echo "Public TORAM site validated as a simple, non-investor, non-technical narrative."
