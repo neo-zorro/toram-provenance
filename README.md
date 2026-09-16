@@ -1,10 +1,10 @@
 # TORAM
 
-**Working financial AI runtime → repeatable infrastructure**
+**Governed financial runtime for causal state, controlled action and replayable evidence**
 
-TORAM has built a governed financial AI reference runtime around NIFTY futures and options. The system connects durable market state, proprietary temporal intelligence, deterministic authority, controlled execution and replayable evidence in one operating chain.
+TORAM is a working financial runtime built first around NIFTY futures and options. The system connects durable market state, temporal intelligence, deterministic authority, controlled broker execution and replayable evidence in one operating chain.
 
-The product objective is simple: **turn the hard first system into a repeatable financial-runtime product for controlled users, brokers and institutions.**
+The product direction is to make those runtime contracts reusable across supported instruments and broker-connected financial workflows without making any single model, feed or broker the product boundary.
 
 ## What exists today
 
@@ -13,46 +13,51 @@ The private operating stack already covers the core runtime primitives:
 - durable live market capture and historical replay;
 - one causal decision path across live and replay;
 - deterministic capital, session, freshness and risk authority;
-- broker execution, reconciliation and decision/outcome evidence.
+- fail-closed transport and execution boundaries;
+- controlled broker execution and order/position reconciliation;
+- charge-aware execution reporting and post-trade evidence.
 
-The public site describes those primitives at a high level. Detailed architecture, parity evidence, broker-linked records, operating controls and financing terms belong in controlled investor diligence.
+Controlled full-session tests have reproduced live decision timing and state-machine behavior from recorded market history, and broker-linked LIVE execution has been exercised through a separate signed execution service.
 
 ## Product thesis
 
-TORAM productizes the path:
+TORAM organizes financial action as:
 
 `Data → Intelligence → Authority → Action → Evidence`
 
-Models, feeds and action endpoints can change. The runtime contract keeps time, permission, action and evidence coherent.
+Models, feeds and brokers can change. The runtime contract keeps time, permission, action and evidence coherent.
 
 **Generative where useful. Deterministic where authority matters.**
 
-## Scale path
+## Product direction
 
-1. **Prove** — harden the NIFTY reference runtime and evidence discipline.
-2. **Productize** — extract reusable contracts, capability registry, validation and financial adapters.
-3. **Distribute** — broker/institutional/pro surfaces, multi-market support and runtime/API packaging.
+The runtime is being generalized through explicit capabilities and adapters:
 
-Broader time-series verticals are long-horizon optionality, not the execution plan today.
+1. **Reference runtime** — continue hardening the existing NIFTY derivatives implementation.
+2. **Reusable financial runtime** — extract instrument capabilities, broker adapters, permissions, observability and validation.
+3. **Connected workflows** — extend across supported instruments, professional workflows, private deployments and API/runtime surfaces.
+
+An instrument is not considered supported until its data, execution, risk and evidence contracts are production-ready.
 
 ## Public disclosure boundary
 
 Safe to discuss publicly:
 
-- the working financial reference-system thesis;
+- the working financial-runtime thesis;
 - high-level data / intelligence / authority / action / evidence architecture;
 - the NIFTY futures/options proving ground;
-- live/replay discipline, fail-closed controls and evidence principles;
-- productization and distribution direction.
+- live/replay discipline and fail-closed controls;
+- controlled broker execution and reconciliation at a high level;
+- multi-instrument product direction.
 
-Do not publish here:
+Not published here:
 
-- financing terms, valuation, runway, allocation or investment-round details;
 - proprietary strategy formulas, thresholds, weights or calibration;
 - strategy-specific feature definitions or model artifacts;
 - raw decision-audit datasets or private broker records;
 - credentials, infrastructure addresses, internal repositories or source code;
-- unsupported, annualized or extrapolated performance claims.
+- unsupported, annualized or extrapolated performance claims;
+- private commercial or financing materials.
 
 ## Technology
 
@@ -74,4 +79,4 @@ Then run or re-run the **Deploy TORAM Provenance** workflow.
 
 ## Public purpose
 
-This repository is informational. It is not investment advice, a brokerage service, an offer of securities or a guarantee of financial performance.
+This repository is a public product and technology overview. It is informational and is not investment advice, a brokerage service or a guarantee of financial performance.
