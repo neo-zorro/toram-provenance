@@ -39,23 +39,23 @@ jobs:
           test -s _site/index.html
           test -s _site/404.html
           test -s _site/styles.css
-          grep -Fq "TORAM — Working Financial AI Runtime" _site/index.html
-          grep -Fq "WORKING FINANCIAL AI RUNTIME" _site/index.html
+          grep -Fq "TORAM — Governed Financial Runtime" _site/index.html
+          grep -Fq "WORKING FINANCIAL RUNTIME" _site/index.html
           grep -Fq "CURRENT PROOF" _site/index.html
+          grep -Fq "CAPABILITIES" _site/index.html
           grep -Fq "THE SCALE PATH" _site/index.html
-          grep -Fq "Repeatable financial runtime" _site/index.html
-          grep -Fq "INVESTOR DILIGENCE" _site/index.html
-          grep -Fq "Financing terms" _site/index.html
+          grep -Fq "Broker-linked execution exercised" _site/index.html
+          ! grep -Fq "INVESTOR DILIGENCE" _site/index.html
+          ! grep -Fq "Investors" _site/index.html
+          ! grep -Fq "WHAT SEED CAPITAL BUILDS" _site/index.html
+          ! grep -Fq "Seed productization" _site/index.html
+          ! grep -Fq "THE FIRST COMMERCIAL WEDGE" _site/index.html
+          ! grep -Fq "BUSINESS MODEL" _site/index.html
           ! grep -Fq "PRE-SEED" _site/index.html
           ! grep -Fq "€1.5M" _site/index.html
           ! grep -Fq "18–24 months" _site/index.html
-          ! grep -Fq "not proprietary trading capital" _site/index.html
           ! grep -Fq "This funding round" _site/index.html
-          ! grep -Fq "WEATHER + CLIMATE RESPONSE" _site/index.html
-          ! grep -Fq "SPORTS + ATHLETE INTELLIGENCE" _site/index.html
-          ! grep -Fq "LOGISTICS + SUPPLY NETWORKS" _site/index.html
-          ! grep -Fq "AGROTECH + FARM OPERATIONS" _site/index.html
           ! grep -Fq "TORAM-MAIN" _site/index.html
           ! grep -Fq "TORAM-Market-Recorder" _site/index.html
           grep -q "\\.bg-slate-950" _site/styles.css
-          echo "Public TORAM site validated with financing terms kept private."
+          echo "Public TORAM site validated as product/technology narrative only."
