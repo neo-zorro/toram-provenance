@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Authority should be visible — TORAM</title>
-  <meta name="description" content="Search can find information. We are exploring what comes next: answers that show where they came from, who actually knows, what changed, and why a human should trust them." />
+  <title>An answer should earn its authority — TORAM</title>
+  <meta name="description" content="Ask a question. Build the system that can prove the claim. Keep it if the evidence holds. Slide it away if it does not." />
   <meta name="theme-color" content="#020617" />
-  <meta property="og:title" content="Authority should be visible" />
-  <meta property="og:description" content="Don't just show me an answer. Show me why I should trust it." />
+  <meta property="og:title" content="An answer should earn its authority" />
+  <meta property="og:description" content="Do not rank the answer. Build the proof around the claim." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -21,10 +21,10 @@
       <span>TORAM</span>
     </a>
     <nav class="hidden items-center gap-7 text-sm text-slate-300 md:flex" aria-label="Primary navigation">
-      <a class="transition hover:text-white" href="#authority">Authority</a>
-      <a class="transition hover:text-white" href="#human-proof">Human proof</a>
-      <a class="transition hover:text-white" href="#living-answer">Living answers</a>
-      <a class="transition hover:text-white" href="#proof">Proving it</a>
+      <a class="transition hover:text-white" href="#problem">The problem</a>
+      <a class="transition hover:text-white" href="#cycle">The cycle</a>
+      <a class="transition hover:text-white" href="#example">A simple example</a>
+      <a class="transition hover:text-white" href="#lifecycle">Keep or discard</a>
       <a class="rounded-full border border-emerald-300/40 px-4 py-2 font-semibold text-emerald-300 transition hover:bg-emerald-300 hover:text-slate-950" href="#coming-soon">Coming soon</a>
     </nav>
   </div>
@@ -35,155 +35,147 @@
     <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_10%,rgba(52,211,153,.16),transparent_30rem),radial-gradient(circle_at_85%_15%,rgba(34,211,238,.10),transparent_32rem)]"></div>
     <div class="mx-auto grid min-h-[740px] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.08fr_.92fr] lg:px-8 lg:py-24">
       <div>
-        <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/[.05] px-3.5 py-2 text-xs font-bold tracking-[0.14em] text-emerald-300">SEARCH FOUND INFORMATION. THE NEXT QUESTION IS AUTHORITY.</div>
-        <h1 class="max-w-5xl text-5xl font-semibold leading-[.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">Don't just show me an answer. <span class="text-emerald-300">Show me why I should trust it.</span></h1>
-        <p class="mt-8 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">We can find almost anything now. But important answers are still mixed with copies, opinions, old information and confident summaries. We think the next layer should make authority visible.</p>
-        <p class="mt-5 max-w-3xl text-sm leading-6 text-slate-500">Who said it first? Who actually did it? Who used it? What evidence exists? Who disagrees? Is it still true today?</p>
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/[.05] px-3.5 py-2 text-xs font-bold tracking-[0.14em] text-emerald-300">THE ANSWER SHOULD HAVE TO PROVE ITSELF</div>
+        <h1 class="max-w-5xl text-5xl font-semibold leading-[.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">An answer should not win because it ranked first. <span class="text-emerald-300">It should earn its authority.</span></h1>
+        <p class="mt-8 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">Ask a question. Instead of giving you another list, imagine building a temporary system around the claim — one that gathers the evidence, tests it, challenges it and shows whether the statement actually stands.</p>
+        <p class="mt-5 max-w-3xl text-sm leading-6 text-slate-500">If the evidence holds, keep the system. If the claim does not stand, slide it away. If the answer can change, keep the cycle alive.</p>
         <div class="mt-9 flex flex-wrap gap-3">
-          <a href="#authority" class="rounded-xl bg-emerald-300 px-5 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-emerald-200">What authority could look like</a>
-          <a href="#proof" class="rounded-xl border border-white/10 bg-white/[.03] px-5 py-3.5 text-sm font-bold text-slate-200 transition hover:border-white/20 hover:bg-white/[.06]">How we are trying to prove it</a>
+          <a href="#cycle" class="rounded-xl bg-emerald-300 px-5 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-emerald-200">See the authority cycle</a>
+          <a href="#example" class="rounded-xl border border-white/10 bg-white/[.03] px-5 py-3.5 text-sm font-bold text-slate-200 transition hover:border-white/20 hover:bg-white/[.06]">See a simple example</a>
         </div>
       </div>
 
       <aside class="rounded-3xl border border-white/10 bg-slate-900/80 p-7 shadow-2xl shadow-black/30 backdrop-blur">
-        <p class="mb-6 text-xs font-extrabold tracking-[0.18em] text-slate-500">A NORMAL HUMAN REQUEST</p>
-        <p class="text-2xl font-semibold leading-9">“I don't want ten links. Show me the original source, who has first-hand experience, what changed, what conflicts, and what I can actually rely on today.”</p>
+        <p class="mb-6 text-xs font-extrabold tracking-[0.18em] text-slate-500">A NORMAL QUESTION</p>
+        <p class="text-2xl font-semibold leading-9">“What are the top schools in Chennai?”</p>
         <div class="mt-7 space-y-3 text-sm leading-6 text-slate-400">
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">Do not hide repeated copies behind a confident answer.</div>
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">Do not erase disagreement when credible sources conflict.</div>
-          <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.04] p-4 font-semibold text-emerald-200">Let me see the chain and decide what deserves authority.</div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">A ranking page can say “Top 10.” That does not tell you why the claim deserves authority.</div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">Define what “top” means. Find the records. Check the dates. Expose the method. Keep disagreement visible.</div>
+          <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.04] p-4 font-semibold text-emerald-200">The result should be able to show why it stands — or clearly admit that it does not.</div>
         </div>
       </aside>
     </div>
   </section>
 
-  <section id="authority" class="py-24 sm:py-28">
+  <section id="problem" class="py-24 sm:py-28">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-end">
         <div>
-          <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">AUTHORITY IS DIFFERENT FROM RANKING</p>
-          <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Popular is not the same as true. Repeated is not the same as independent.</h2>
+          <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE PROBLEM</p>
+          <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Finding pages is not the same as proving a statement.</h2>
         </div>
-        <p class="text-lg leading-8 text-slate-400">Finding useful information is valuable. But when a decision matters, relevance and repetition are not enough. A person needs to see where a claim began, who directly knows, what can be inspected, what changed and where uncertainty remains.</p>
+        <p class="text-lg leading-8 text-slate-400">A page can rank well, repeat what others said, carry a commercial label or look convincing. None of those things alone proves the claim. The missing step is a system built specifically to test what is being asserted.</p>
       </div>
 
-      <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">ORIGIN</span><h3 class="mt-4 text-xl font-semibold">Who created the claim?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Trace the statement back as close as possible to the person, record, measurement or document that produced it.</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">FIRST-HAND</span><h3 class="mt-4 text-xl font-semibold">Who actually knows?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Separate direct observation and real use from commentary, repetition and second-hand reporting.</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-sky-300">EVIDENCE</span><h3 class="mt-4 text-xl font-semibold">What can be inspected?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Keep the document, record, result or other supporting evidence close to the claim.</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">TIME</span><h3 class="mt-4 text-xl font-semibold">When was it true?</h3><p class="mt-3 text-sm leading-6 text-slate-400">A correct answer can become wrong later. Time, version and context should travel with the answer.</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-rose-300">CONFLICT</span><h3 class="mt-4 text-xl font-semibold">Who disagrees?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Credible disagreement should remain visible instead of being averaged away into false certainty.</p></article>
-        <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">STATUS</span><h3 class="mt-4 text-xl font-semibold">What is true now?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Current, disputed, superseded, stale or still unverified should be understandable at a glance.</p></article>
-      </div>
-
-      <div class="mx-auto mt-9 max-w-5xl rounded-3xl border border-emerald-300/20 bg-emerald-300/[.04] p-7 text-center">
-        <p class="text-xl font-semibold text-slate-100">No magic truth score.</p>
-        <p class="mx-auto mt-3 max-w-3xl text-sm leading-6 text-slate-400">Authority should come from a visible chain of evidence, first-hand experience, independent confirmation and human judgment — not from one hidden number.</p>
+      <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">RANKED</span><h3 class="mt-4 text-xl font-semibold">Easy to find.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Useful for discovery. Not automatically proof.</p></article>
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">REPEATED</span><h3 class="mt-4 text-xl font-semibold">Said many times.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Ten copies can still come from one unproven claim.</p></article>
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">CONFIDENT</span><h3 class="mt-4 text-xl font-semibold">Sounds certain.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Confidence does not replace evidence or method.</p></article>
+        <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">PROVEN</span><h3 class="mt-4 text-xl font-semibold">Can show its chain.</h3><p class="mt-3 text-sm leading-6 text-slate-400">The claim, evidence, method, time and challenge are visible.</p></article>
       </div>
     </div>
   </section>
 
-  <section id="human-proof" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
+  <section id="cycle" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-4xl text-center">
-        <p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">HUMAN PROOF SHOULD BE VISIBLE</p>
-        <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">A person should be able to say what they actually did.</h2>
-        <p class="mt-6 text-lg leading-8 text-slate-400">Not a star rating. Not an anonymous “trust me.” A named, time-bounded statement linked to the experience or evidence behind it.</p>
+        <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE AUTHORITY CYCLE</p>
+        <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Build the system that makes the claim earn its authority.</h2>
+        <p class="mt-6 text-lg leading-8 text-slate-400">The cycle is created for the question in front of you. It does not need to become a permanent software project.</p>
       </div>
 
-      <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">I BUILT THIS</span><p class="mt-4 text-lg leading-7 text-slate-200">Who designed or created the thing being discussed?</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">I USED THIS</span><p class="mt-4 text-lg leading-7 text-slate-200">Who relied on it in the real world, under what conditions and when?</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-emerald-300">I VERIFIED THIS</span><p class="mt-4 text-lg leading-7 text-slate-200">Who independently checked or reproduced the result?</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-rose-300">I SAW IT FAIL</span><p class="mt-4 text-lg leading-7 text-slate-200">Failure is evidence too. Who saw the limit, under what conditions?</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">I OPERATED THIS</span><p class="mt-4 text-lg leading-7 text-slate-200">Who has lived with it long enough to know what the documentation does not say?</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-sky-300">I COMMERCIALIZED THIS</span><p class="mt-4 text-lg leading-7 text-slate-200">Who sold, deployed or supported it with real responsibility attached?</p></article>
+      <div class="mt-12 grid gap-4 md:grid-cols-3 lg:grid-cols-6">
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-cyan-300">01</span><h3 class="mt-3 font-semibold">Ask</h3><p class="mt-2 text-sm leading-6 text-slate-500">What do you need to know?</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-violet-300">02</span><h3 class="mt-3 font-semibold">Define</h3><p class="mt-2 text-sm leading-6 text-slate-500">What exactly would count as true?</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-sky-300">03</span><h3 class="mt-3 font-semibold">Gather</h3><p class="mt-2 text-sm leading-6 text-slate-500">Bring the relevant evidence together.</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-amber-300">04</span><h3 class="mt-3 font-semibold">Verify</h3><p class="mt-2 text-sm leading-6 text-slate-500">Check the source, method, date and context.</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-rose-300">05</span><h3 class="mt-3 font-semibold">Challenge</h3><p class="mt-2 text-sm leading-6 text-slate-500">Look for conflict, missing proof and failure.</p></div>
+        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><span class="text-xs font-black text-emerald-300">06</span><h3 class="mt-3 font-semibold">Decide</h3><p class="mt-2 text-sm leading-6 text-slate-500">Does the claim stand today?</p></div>
       </div>
 
       <div class="mx-auto mt-10 max-w-5xl rounded-3xl border border-amber-300/20 bg-amber-300/[.035] p-7 text-center">
-        <p class="text-sm font-bold tracking-[0.12em] text-amber-300">HUMAN AUTHORITY STAYS ABOVE THE AI</p>
-        <p class="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-300">AI can investigate, connect, compare and explain. It should not make itself the source of authority. People should be able to inspect the chain and decide what they trust for the decision in front of them.</p>
+        <p class="text-sm font-bold tracking-[0.12em] text-amber-300">AI DOES THE HEAVY LIFTING. EVIDENCE EARNS THE AUTHORITY.</p>
+        <p class="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-300">The system can search, compare, organize, test and keep watch. It should not manufacture authority because it sounds certain.</p>
       </div>
     </div>
   </section>
 
-  <section class="py-24 sm:py-28">
+  <section id="example" class="py-24 sm:py-28">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
         <div>
-          <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE ROLE OF AI</p>
-          <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Investigate authority. Do not invent it.</h2>
-          <p class="mt-6 text-lg leading-8 text-slate-400">The useful AI is not the one that sounds most certain. It is the one that can do the difficult work of finding the evidence structure underneath an answer.</p>
+          <p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">A SIMPLE EXAMPLE</p>
+          <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">“Top schools in Chennai” should be a claim to prove, not a page to rank.</h2>
+          <p class="mt-6 text-lg leading-8 text-slate-400">The system first asks what “top” means for this decision. Academic outcomes? Accreditation? Student achievement? Parent experience? Affordability? The answer becomes meaningful only after the criteria are explicit.</p>
         </div>
-        <div class="grid gap-4 sm:grid-cols-2">
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Find the earliest source.</strong><p class="mt-2 text-sm leading-6 text-slate-500">Trace repeated claims back toward their origin.</p></div>
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Separate copies from confirmation.</strong><p class="mt-2 text-sm leading-6 text-slate-500">Ten pages repeating one source are not ten independent sources.</p></div>
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Expose missing evidence.</strong><p class="mt-2 text-sm leading-6 text-slate-500">Show what is claimed but not actually demonstrated.</p></div>
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Keep disagreement alive.</strong><p class="mt-2 text-sm leading-6 text-slate-500">Do not flatten credible conflict into one answer.</p></div>
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Follow what changes.</strong><p class="mt-2 text-sm leading-6 text-slate-500">A trustworthy answer should be able to become outdated visibly.</p></div>
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Explain uncertainty.</strong><p class="mt-2 text-sm leading-6 text-slate-500">Say what is known, what is inferred and what remains open.</p></div>
+
+        <div class="space-y-4">
+          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Define the claim.</strong><p class="mt-2 text-sm leading-6 text-slate-500">“Which Chennai schools are strongest under these stated criteria for this stated period?”</p></div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Bring in evidence that can actually support it.</strong><p class="mt-2 text-sm leading-6 text-slate-500">Official affiliation, dated outcomes, declared methodology, independent checks and first-hand experience can each carry different kinds of authority.</p></div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Penalize unsupported claims by withholding authority.</strong><p class="mt-2 text-sm leading-6 text-slate-500">A commercial “Top 10” page can remain visible, but its ranking does not become proof unless the method and evidence stand up.</p></div>
+          <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><strong class="text-emerald-200">Return what the evidence supports.</strong><p class="mt-2 text-sm leading-6 text-slate-400">Supported, partly supported, conflicted, unproven or stale — with the reason visible.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="living-answer" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
+  <section class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-4xl text-center">
-        <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">FROM SEARCH RESULT TO LIVING ANSWER</p>
-        <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Some questions should not end when the tab closes.</h2>
-        <p class="mt-6 text-lg leading-8 text-slate-400">Ask once. Keep the evidence, people, changes and open questions together. Let the answer evolve as reality evolves.</p>
+        <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE RESULT IS NOT JUST YES OR NO</p>
+        <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">A claim can stand, weaken, conflict or expire.</h2>
       </div>
 
-      <div class="mt-12 grid gap-4 md:grid-cols-5">
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-cyan-300">01</span><h3 class="mt-3 font-semibold">Ask</h3><p class="mt-2 text-sm leading-6 text-slate-500">Describe what you need to know or accomplish.</p></div>
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-violet-300">02</span><h3 class="mt-3 font-semibold">Trace</h3><p class="mt-2 text-sm leading-6 text-slate-500">Build the source and evidence chain.</p></div>
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-amber-300">03</span><h3 class="mt-3 font-semibold">Decide</h3><p class="mt-2 text-sm leading-6 text-slate-500">You choose what carries authority.</p></div>
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-emerald-300">04</span><h3 class="mt-3 font-semibold">Keep watching</h3><p class="mt-2 text-sm leading-6 text-slate-500">See what changed after the original answer.</p></div>
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-sky-300">05</span><h3 class="mt-3 font-semibold">Choose its future</h3><p class="mt-2 text-sm leading-6 text-slate-500">Delete it, pause it, keep it or keep it alive.</p></div>
-      </div>
-
-      <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-rose-300">DISASTER RESPONSE</span><p class="mt-4 text-lg leading-7 text-slate-200">“Show the official warnings, direct field reports and what changed in the last hour. Keep uncertain reports separate.”</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">SPACE PROJECT</span><p class="mt-4 text-lg leading-7 text-slate-200">“Show the original requirement, who tested the part, who has flown it, what failed and what is still unproven.”</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">DEEP RESEARCH</span><p class="mt-4 text-lg leading-7 text-slate-200">“Follow this question for three months. Keep the primary evidence and show me when the accepted answer changes.”</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">SUPPLY CHAIN</span><p class="mt-4 text-lg leading-7 text-slate-200">“Who actually made this component, who verified it, who deployed it and which claims only come from resellers?”</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-sky-300">HARD-TO-FIND FACT</span><p class="mt-4 text-lg leading-7 text-slate-200">“Everyone repeats the same answer. Find where it started and tell me whether anyone independently proved it.”</p></article>
-        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-emerald-300">A NEW IDEA</span><p class="mt-4 text-lg leading-7 text-slate-200">“I do not know the right answer yet. Keep the evidence, people and decisions together while the idea becomes real.”</p></article>
+      <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+        <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">SUPPORTED</span><p class="mt-4 text-sm leading-6 text-slate-300">The available evidence supports the defined claim under the stated conditions.</p></article>
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">PARTLY SUPPORTED</span><p class="mt-4 text-sm leading-6 text-slate-400">Some parts stand. Important limits remain.</p></article>
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">CONFLICTED</span><p class="mt-4 text-sm leading-6 text-slate-400">Credible evidence points in different directions.</p></article>
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-rose-300">UNPROVEN</span><p class="mt-4 text-sm leading-6 text-slate-400">The claim exists, but the required evidence does not.</p></article>
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">STALE</span><p class="mt-4 text-sm leading-6 text-slate-400">It may once have stood, but the world has moved on.</p></article>
       </div>
     </div>
   </section>
 
-  <section id="proof" class="py-24 sm:py-28">
+  <section id="lifecycle" class="py-24 sm:py-28">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="grid gap-12 lg:grid-cols-[1fr_.92fr] lg:items-start">
+      <div class="grid gap-12 lg:grid-cols-[1fr_.9fr] lg:items-center">
         <div>
-          <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">PROVING IT, NOT PROMISING IT</p>
-          <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">We are testing the philosophy in one narrow, difficult real-time system.</h2>
-          <p class="mt-6 text-lg leading-8 text-slate-400">TORAM is our first proving ground. It is intentionally narrow and still under development. Information changes quickly, timing matters, actions can have consequences and history must remain reconstructable.</p>
-          <p class="mt-5 text-sm leading-6 text-slate-500">We are testing whether source, time, state, change, authority and human control can survive under pressure instead of only looking good in a concept diagram.</p>
+          <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">USE IT. THEN DECIDE IF IT DESERVES TO STAY.</p>
+          <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">The proof system can be temporary too.</h2>
+          <p class="mt-6 text-lg leading-8 text-slate-400">Not every important question needs another permanent app. Build the cycle for the question. Let it work. Then decide what happens next.</p>
         </div>
         <div class="grid gap-4 sm:grid-cols-2">
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Can we preserve the source chain?</strong><p class="mt-2 text-sm leading-6 text-slate-500">The answer should remain connected to what produced it.</p></div>
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Can time remain honest?</strong><p class="mt-2 text-sm leading-6 text-slate-500">Old state must not quietly become current truth.</p></div>
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Can history be replayed?</strong><p class="mt-2 text-sm leading-6 text-slate-500">We should be able to reconstruct why the system believed what it believed.</p></div>
-          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Can humans keep authority?</strong><p class="mt-2 text-sm leading-6 text-slate-500">Intelligence should not silently acquire permission.</p></div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Delete it.</strong><p class="mt-2 text-sm leading-6 text-slate-500">The question is over. Slide the system away.</p></div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Pause it.</strong><p class="mt-2 text-sm leading-6 text-slate-500">Keep the work, stop the active cycle.</p></div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Keep it.</strong><p class="mt-2 text-sm leading-6 text-slate-500">The question matters again and again.</p></div>
+          <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><strong class="text-emerald-200">Maintain it.</strong><p class="mt-2 text-sm leading-6 text-slate-400">The answer can change. Let the cycle keep proving what is true now.</p></div>
         </div>
-      </div>
-
-      <div class="mx-auto mt-10 max-w-5xl rounded-3xl border border-amber-300/20 bg-amber-300/[.035] p-7 text-center">
-        <p class="text-xl font-semibold text-slate-100">Passing one hard test will not prove universal truth.</p>
-        <p class="mx-auto mt-3 max-w-3xl text-sm leading-6 text-slate-400">It would prove something smaller and useful: that we can preserve provenance, changing state and human authority in a demanding real-time environment. If we cannot do that there, the larger vision is incomplete.</p>
       </div>
     </div>
   </section>
 
-  <section id="coming-soon" class="border-t border-white/10 bg-white/[.018] px-6 py-24 lg:px-8">
-    <div class="mx-auto max-w-5xl text-center">
+  <section class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-4xl text-center">
+        <p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">WHERE THIS COULD MATTER</p>
+        <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Any time a statement matters more than a ranking.</h2>
+      </div>
+
+      <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">EDUCATION</span><p class="mt-4 text-lg leading-7 text-slate-200">“Which school actually fits these outcomes and constraints?”</p></article>
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-rose-300">DISASTER RESPONSE</span><p class="mt-4 text-lg leading-7 text-slate-200">“Which route is really open now, and who can prove it?”</p></article>
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">SPACE PROJECTS</span><p class="mt-4 text-lg leading-7 text-slate-200">“Can this component stand the conditions we are designing for?”</p></article>
+        <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-emerald-300">DEEP RESEARCH</span><p class="mt-4 text-lg leading-7 text-slate-200">“Does this claim still hold when we trace and challenge the evidence?”</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="coming-soon" class="px-6 py-24 lg:px-8">
+    <div class="mx-auto max-w-7xl rounded-3xl border border-emerald-300/20 bg-gradient-to-br from-emerald-300/[.10] to-cyan-300/[.04] p-8 sm:p-10 lg:p-12">
       <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">COMING SOON</p>
-      <h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Information is abundant. Authority is scarce.</h2>
-      <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-400">Search gave us access. AI is giving us answers. We are interested in what comes next: answers people can trace, challenge, reproduce, trust conditionally and keep alive as reality changes.</p>
-      <p class="mt-8 text-2xl font-semibold text-emerald-300">Authority should be inspectable.</p>
+      <h2 class="mt-4 max-w-5xl text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Ask the question. Build the proof. Let the claim earn its authority.</h2>
+      <p class="mt-6 max-w-4xl text-lg leading-8 text-slate-400">We are exploring a future where answers are not accepted because they are popular, repeated or confidently generated. They stand because a system can show the evidence that supports them — and show when that evidence breaks.</p>
+      <p class="mt-8 text-xl font-semibold text-emerald-200">Build it. Prove it. Keep it only if it deserves to stay.</p>
     </div>
   </section>
 </main>
@@ -191,7 +183,7 @@
 <footer class="border-t border-white/10 bg-slate-950 py-10">
   <div class="mx-auto max-w-7xl px-6 text-sm leading-6 text-slate-500 lg:px-8">
     <strong class="tracking-[0.16em] text-slate-200">TORAM</strong>
-    <p class="mt-3 max-w-5xl">A public concept page about provenance, human authority and a more inspectable relationship with information. It does not claim universal truth and intentionally keeps private implementation details out of the public narrative.</p>
+    <p class="mt-3 max-w-5xl">A public glimpse of a product direction still being proven. The page describes a concept, not a guarantee that every question can be resolved or every claim can be made authoritative.</p>
   </div>
 </footer>
 </body>
