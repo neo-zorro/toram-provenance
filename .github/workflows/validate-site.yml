@@ -39,14 +39,24 @@ jobs:
           test -s _site/index.html
           test -s _site/404.html
           test -s _site/styles.css
-          grep -Fq "TORAM — What if software could appear when you need it?" _site/index.html
           grep -Fq "A GLIMPSE OF WHAT MAY COME NEXT" _site/index.html
-          grep -Fq "THE IDEA" _site/index.html
-          grep -Fq "YOUR JOURNEY" _site/index.html
-          grep -Fq "ONE IDEA. MANY WORLDS." _site/index.html
+          grep -Fq "WHEN SEARCH IS NOT ENOUGH" _site/index.html
+          grep -Fq "Finding information is easy. Knowing what deserves your trust is harder." _site/index.html
+          grep -Fq "Show where it came from." _site/index.html
+          grep -Fq "Make disagreement visible." _site/index.html
+          grep -Fq "Keep watching." _site/index.html
           grep -Fq "THE HUMAN STAYS IN CONTROL" _site/index.html
+          grep -Fq "DISASTER RESPONSE" _site/index.html
+          grep -Fq "SPACE PROJECT" _site/index.html
           grep -Fq "COMING SOON" _site/index.html
-          grep -Fq "Describe it. Use it. Decide whether it deserves to stay." _site/index.html
+          grep -Fq "Trust what you can trace." _site/index.html
+          ! grep -Fiq "BANKNIFTY" _site/index.html
+          ! grep -Fiq "NIFTY" _site/index.html
+          ! grep -Fiq "finance" _site/index.html
+          ! grep -Fiq "financial" _site/index.html
+          ! grep -Fiq "trading" _site/index.html
+          ! grep -Fiq "broker" _site/index.html
+          ! grep -Fiq "market" _site/index.html
           ! grep -Fq "INVESTOR DILIGENCE" _site/index.html
           ! grep -Fq "Investors" _site/index.html
           ! grep -Fq "SEED" _site/index.html
@@ -61,4 +71,4 @@ jobs:
           ! grep -Fq "HMAC" _site/index.html
           ! grep -Fq "QuestDB" _site/index.html
           grep -q "\\.bg-slate-950" _site/styles.css
-          echo "Public TORAM site validated as a simple, non-investor, non-technical narrative."
+          echo "Public site validated as domain-neutral, non-investor, non-technical and source-trust centered."
