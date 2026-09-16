@@ -1,49 +1,58 @@
-# TORAM
+# Public concept page
 
-**What if software could appear when you need it?**
+**What if the thing you need could appear when you ask for it?**
 
-This public repository describes a simple idea in simple language:
+This repository contains a deliberately simple public page about a future interaction model for software.
 
-Tell us what you need. Use the working system that appears around that need. When you are finished, delete it. If it becomes useful, keep it. If it becomes important, let us keep it running for you.
+The public idea is straightforward:
 
-The long-term idea is broader than finance and broader than any single app.
+- start with a question, problem, mission or idea;
+- let a useful working space take shape around that need;
+- see where important information came from;
+- keep watching when the answer can change;
+- stay in control of important choices; and
+- delete the system, pause it, keep it, copy it, or let it continue when the need changes.
 
-## The public idea
+## Why search is not always enough
 
-A person should be able to start with a need instead of a software project.
+People can find enormous amounts of information and still not know what deserves their trust.
 
-Examples:
+Important questions often produce:
 
-- “Give me a live view of this market today and let me replay it tomorrow.”
-- “Show me every shipment that could miss tomorrow.”
-- “Give me one live room for this product launch.”
-- “Follow these sources for a month and remember every change.”
-- “Build me a live room for this event and shut it down after the final.”
+- several different answers;
+- old pages presented beside current ones;
+- copied information without the original source;
+- official information mixed with commentary;
+- missing dates or context; and
+- answers that become outdated after the search ends.
 
-The person should be able to:
+The public concept explores a different experience: bring the relevant evidence together, keep each important claim close to its source and date, make disagreement visible, and keep following the question when the world changes.
 
-1. ask for something;
-2. use it while the need is real;
-3. stay in control of important actions;
-4. change it as the need changes; and
-5. delete it, keep it, copy it, or keep it running.
+It should not pretend there is always one perfect answer. The person remains responsible for deciding which sources and actions deserve authority in their situation.
 
-## Where we started
+## Illustrative possibilities
 
-The first proving ground was live financial markets, where timing, memory, replay and human control matter immediately.
+The examples on the page are intentionally broad and domain-neutral:
 
-That work remains private in detail. The public page only shows the broader direction and the kind of experience we want to make possible.
+- resolving a hard-to-find answer when sources disagree;
+- following official warnings, road closures, shelters and local reports during a disaster;
+- organizing the requirements, parts, tests, documents and decisions behind a space project;
+- creating a temporary working room for a field mission;
+- following a research question over months and remembering how the evidence changed; and
+- letting a new idea take shape before the user even knows what software they need.
+
+These examples are glimpses, not product promises for specific industries.
 
 ## Public disclosure boundary
 
-This repository intentionally avoids publishing:
+The public page intentionally does not publish:
 
 - private implementation details;
-- proprietary financial-market logic;
 - internal systems or source architecture;
-- private broker records;
-- investor materials or financing details; and
-- unsupported performance claims.
+- proprietary methods or models;
+- private customer, account or operational records;
+- investor materials or financing details; or
+- unsupported claims about performance or capability.
 
 ## Technology of this public site
 
@@ -58,4 +67,4 @@ Deployment is handled by `.github/workflows/deploy-pages.yml`.
 
 ## Public purpose
 
-This is a public concept and product-direction page. It is informational and does not provide financial or investment advice.
+This is a public concept and product-direction page. Its purpose is to create curiosity about how people may interact with software differently in the AI era without disclosing the private ideas or systems underneath it.
