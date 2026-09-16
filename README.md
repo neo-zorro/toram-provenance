@@ -1,104 +1,77 @@
 # Public concept page
 
-**Don't just show me an answer. Show me why I should trust it.**
+**An answer should earn its authority.**
 
-This repository contains a deliberately simple public page about a problem that becomes more important as information and AI-generated answers become abundant: **authority**.
+This repository contains a deliberately simple public page about a future product direction:
 
-The public thesis is not that search is useless. Search made information accessible. The harder question now is whether a person can see:
+> Ask a question. Build the temporary system needed to test the claim. If the evidence holds, keep it. If it does not, discard it. If the answer can change, keep the cycle alive.
 
-- where a claim came from;
-- who actually observed, built, used or verified it;
-- what evidence can be inspected;
-- when it was true;
-- who disagrees;
-- what has changed; and
-- whether the answer is still current.
+The public concept is not a conventional search engine and not a universal truth machine.
 
-## Authority is different from ranking
+It explores a different interaction:
 
-Useful information can be popular, repeated or easy to find without being first-hand or independently verified.
+1. ask a question;
+2. define the claim precisely;
+3. gather the evidence that can legitimately support it;
+4. verify source, method, date and context;
+5. challenge the claim with conflicting evidence and missing proof;
+6. return a visible status such as supported, partly supported, conflicted, unproven or stale; and
+7. delete, pause, keep or maintain the resulting system.
 
-The public concept explores a different experience: keep important claims close to their origin, evidence, date, context and human experience.
+## Why ranking is not proof
 
-The system should not pretend that one hidden score can decide truth. Authority should remain inspectable and contextual.
+A page can be easy to find, commercially promoted, repeated by many sites or summarized confidently without proving the underlying statement.
 
-Possible states might include ideas such as:
+The public example uses a simple question:
 
-- primary or original;
-- first-hand;
-- independently verified;
-- reproduced;
-- disputed;
-- superseded;
-- stale; or
-- still unverified.
+> “What are the top schools in Chennai?”
 
-The person remains responsible for deciding what carries authority for the decision in front of them.
+A normal result may show many “Top 10” or “Best Schools” pages. The authority-cycle concept asks a different question:
 
-## Human proof
+> What does “top” mean for this decision, what evidence can support the statement, what is current, what is first-hand, what conflicts, and does the claim actually stand under the stated criteria?
 
-A core idea is that real experience should be visible without being reduced to anonymous ratings.
+A commercial list can remain useful for discovery while still failing to earn authority for the ranking it publishes.
 
-Examples of evidence-backed human statements include:
+## The core principle
 
-- **I built this**;
-- **I used this**;
-- **I verified this**;
-- **I saw it fail**;
-- **I operated this**; and
-- **I commercialized this**.
+**Build the system that makes a claim earn its authority.**
 
-The important part is not the label. It is the named, time-bounded experience and the evidence behind it.
+Authority attaches to a specific claim under specific conditions. It does not automatically attach to a whole website, company, person or model.
 
 ## The role of AI
 
-The AI should not make itself the authority.
+AI can do the heavy lifting around the cycle:
 
-Its job is to do the difficult investigative work:
-
-- trace repeated claims toward their origin;
-- separate copied information from independent confirmation;
+- search and gather;
+- trace sources;
+- compare methods and dates;
+- identify missing evidence;
 - surface credible disagreement;
-- show missing evidence;
-- explain uncertainty;
-- follow changes over time; and
-- keep the source chain close to the answer.
+- organize first-hand experience; and
+- keep the cycle current.
 
-## From search result to living answer
+AI should not create authority merely by sounding certain.
 
-Some questions should stay alive after the first search.
+## Temporary by design
 
-A person should be able to ask once, keep the evidence and people together, watch what changes, and then decide whether the resulting system should be deleted, paused, kept or maintained.
+The proof system itself can be temporary.
 
-Illustrative public examples include:
+The user can:
 
-- disaster response;
-- a space project;
-- deep research;
-- supply-chain provenance;
-- a hard-to-find fact repeated across many sources; and
-- a new idea whose answer is still forming.
-
-These are glimpses, not product promises for specific industries.
-
-## Proving it, not promising it
-
-TORAM is the first narrow proving ground for this philosophy.
-
-It is intentionally difficult and still under development. The aim is to test whether source, time, changing state, provenance, replayable history and human authority can remain coherent in a demanding real-time environment.
-
-Passing one narrow test would not prove universal truth. It would prove something smaller and useful: that these principles can survive one hard operating environment instead of existing only as a concept.
+- delete it when the question is over;
+- pause it while keeping the work;
+- retain it for a recurring need; or
+- have it maintained when the answer can change over time.
 
 ## Public disclosure boundary
 
-The public page intentionally does not publish:
+This page intentionally avoids publishing:
 
 - private implementation details;
-- internal systems or source architecture;
+- internal architecture;
 - proprietary methods or models;
-- private customer, account or operational records;
-- investor materials or financing details; or
-- unsupported claims about performance or capability.
+- investor materials or financing details; and
+- unsupported claims that every question can be resolved or made authoritative.
 
 ## Technology of this public site
 
@@ -113,4 +86,4 @@ Deployment is handled by `.github/workflows/deploy-pages.yml`.
 
 ## Public purpose
 
-This is a public concept and product-direction page. Its purpose is to make the authority and provenance problem visible without claiming universal truth or disclosing the private machinery underneath it.
+This is a public concept and product-direction page. The concept is still being proven.
