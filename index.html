@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TORAM — Financial-market intelligent infrastructure</title>
-  <meta name="description" content="TORAM is building the production assurance layer for algorithmic and AI trading: canonical market state, deterministic replay, fail-closed execution and broker-truth reconciliation." />
+  <meta name="description" content="TORAM starts with a simple trading workspace: define gates for one instrument, replay them, run the same logic in live paper, and scale the same runtime toward controlled execution and institutional production assurance." />
   <meta name="theme-color" content="#020617" />
   <meta property="og:title" content="TORAM — Financial-market intelligent infrastructure" />
-  <meta property="og:description" content="Trading intelligence is only useful if production behaves as intended." />
+  <meta property="og:description" content="Start with one instrument. Define the gates. Replay it. Watch it live. Scale the same runtime." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -17,10 +17,10 @@
   <div class="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-5 px-6 lg:px-8">
     <a href="#top" class="flex items-center gap-3 font-semibold tracking-[0.18em]" aria-label="Home"><span class="grid size-9 place-items-center rounded-xl border border-emerald-300/40 bg-emerald-300/5 text-sm font-black text-emerald-300">T</span><span>TORAM</span></a>
     <nav class="hidden items-center gap-7 text-sm text-slate-300 md:flex" aria-label="Primary navigation">
-      <a class="transition hover:text-white" href="#gap">Production gap</a>
-      <a class="transition hover:text-white" href="#product">Product</a>
-      <a class="transition hover:text-white" href="#backtest">Beyond backtesting</a>
-      <a class="transition hover:text-white" href="#proof">Proof</a>
+      <a class="transition hover:text-white" href="#start">Start simple</a>
+      <a class="transition hover:text-white" href="#junction">Junction gates</a>
+      <a class="transition hover:text-white" href="#loop">Replay → paper → live</a>
+      <a class="transition hover:text-white" href="#users">Who it is for</a>
       <a class="rounded-full border border-emerald-300/40 px-4 py-2 font-semibold text-emerald-300 transition hover:bg-emerald-300 hover:text-slate-950" href="#vision">Vision</a>
     </nav>
   </div>
@@ -31,97 +31,113 @@
   <div class="mx-auto grid min-h-[760px] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.08fr_.92fr] lg:px-8 lg:py-24">
     <div>
       <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/[.05] px-3.5 py-2 text-xs font-bold tracking-[0.14em] text-emerald-300">FINANCIAL-MARKET INTELLIGENT INFRASTRUCTURE</div>
-      <h1 class="max-w-5xl text-5xl font-semibold leading-[.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">Trading intelligence is only useful if <span class="text-emerald-300">production behaves as intended.</span></h1>
-      <p class="mt-8 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">TORAM is building the production assurance layer between market data, trading intelligence and broker execution.</p>
-      <p class="mt-5 max-w-3xl text-sm leading-6 text-slate-500">Preserve the market state the system actually saw. Run live and replay through the same decision path. Fail closed when that state is unsafe. Reconcile the final outcome to broker truth.</p>
-      <div class="mt-9 flex flex-wrap gap-3"><a href="#product" class="rounded-xl bg-emerald-300 px-5 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-emerald-200">See the product layer</a><a href="#proof" class="rounded-xl border border-white/10 bg-white/[.03] px-5 py-3.5 text-sm font-bold text-slate-200 transition hover:border-white/20 hover:bg-white/[.06]">See current engineering proof</a></div>
+      <h1 class="max-w-5xl text-5xl font-semibold leading-[.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">Start with one instrument. <span class="text-emerald-300">Define the gates. Replay it. Watch it live.</span></h1>
+      <p class="mt-8 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">TORAM is being built so a self-directed user can express a trading idea as explicit gates, test the same logic on replay, run it against the live market in paper mode, and—where enabled—carry that same controlled path into execution.</p>
+      <p class="mt-5 max-w-3xl text-sm leading-6 text-slate-500">The same runtime is designed to scale upward: more instruments, more strategies, team controls, broker reconciliation and production assurance for professional and institutional users.</p>
+      <div class="mt-9 flex flex-wrap gap-3"><a href="#start" class="rounded-xl bg-emerald-300 px-5 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-emerald-200">See the simple workflow</a><a href="#users" class="rounded-xl border border-white/10 bg-white/[.03] px-5 py-3.5 text-sm font-bold text-slate-200 transition hover:border-white/20 hover:bg-white/[.06]">See how it scales</a></div>
     </div>
     <aside class="rounded-3xl border border-white/10 bg-slate-900/80 p-7 shadow-2xl shadow-black/30 backdrop-blur">
-      <p class="mb-6 text-xs font-extrabold tracking-[0.18em] text-slate-500">THE OPERATING PRINCIPLE</p>
-      <p class="text-2xl font-semibold leading-9">Observe causally. Decide once. Replay exactly. Fail closed. Reconcile externally.</p>
+      <p class="mb-6 text-xs font-extrabold tracking-[0.18em] text-slate-500">A SIMPLE USER JOURNEY</p>
+      <p class="text-2xl font-semibold leading-9">“I have one instrument and one idea. Let me define exactly when it is allowed to act.”</p>
       <div class="mt-7 space-y-3 text-sm leading-6 text-slate-400">
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">Research asks whether a strategy would have worked.</div>
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">Production assurance asks whether the live system behaved exactly as designed.</div>
-        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.04] p-4 font-semibold text-emerald-200">TORAM starts where the backtest stops.</div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">Choose one instrument and define entry, hold, exit, risk and execution conditions.</div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">Replay a recorded session and inspect every junction where the strategy passed, waited or failed.</div>
+        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.04] p-4 font-semibold text-emerald-200">Run the same definition in live paper before deciding whether real execution should ever be enabled.</div>
       </div>
     </aside>
   </div>
 </section>
-<section id="gap" class="py-24 sm:py-28">
+
+<section id="start" class="py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-end">
-      <div><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE PRODUCTION GAP</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">A strategy can pass research and still become a different system in live markets.</h2></div>
-      <p class="text-lg leading-8 text-slate-400">Live feeds arrive differently. Timestamps and event order matter. Quotes become stale. Connections break. Market depth changes while decisions are being made. Simulated fills differ from real fills. Broker state can diverge from local state. The production problem is not only whether the model is intelligent; it is whether the entire path remains trustworthy.</p>
+      <div><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">START SIMPLE</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">A useful product can begin with one instrument and one controlled strategy loop.</h2></div>
+      <p class="text-lg leading-8 text-slate-400">The consumer entry point is intentionally narrow. The user does not need to build an institutional stack. They need a clear place to define a strategy, see why it acts, replay the same logic, and compare that behavior with live paper.</p>
     </div>
     <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">OBSERVE</span><h3 class="mt-4 text-xl font-semibold">What did the engine actually see?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Preserve the exact causal observations available at the decision moment.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">TRUST</span><h3 class="mt-4 text-xl font-semibold">Was the state still safe to use?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Freshness, gaps, disconnects and reconnect boundaries determine whether execution is allowed.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">REPRODUCE</span><h3 class="mt-4 text-xl font-semibold">Can the decision be replayed?</h3><p class="mt-3 text-sm leading-6 text-slate-400">The same recorded causal history should traverse the same decision path later.</p></article>
-      <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">RECONCILE</span><h3 class="mt-4 text-xl font-semibold">What did the broker actually do?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Intent, acknowledgement, fills, positions and external truth remain distinct until reconciled.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">01 · INSTRUMENT</span><h3 class="mt-4 text-xl font-semibold">Pick the thing you trade.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Start with a single future, option, equity or other supported instrument rather than an entire portfolio.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">02 · STRATEGY</span><h3 class="mt-4 text-xl font-semibold">Express the idea as gates.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Define the observable conditions, entry logic, hold logic, exit logic, risk limits and execution permissions.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">03 · REPLAY</span><h3 class="mt-4 text-xl font-semibold">Walk the market again.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Run recorded market state through the same strategy path and inspect the decision sequence, not only the final P&amp;L.</p></article>
+      <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">04 · LIVE PAPER</span><h3 class="mt-4 text-xl font-semibold">Watch the same logic now.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Apply the same gates to the live market with simulated execution before deciding whether to connect real execution.</p></article>
     </div>
   </div>
 </section>
-<section id="product" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
+
+<section id="junction" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl text-center"><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE TORAM PRODUCT LAYER</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Infrastructure for trading intelligence — not one trading strategy.</h2><p class="mt-6 text-lg leading-8 text-slate-400">Rules, state machines, quantitative models, machine learning and future AI policies can change. The requirement to know what the system saw, why it acted and what happened externally does not.</p></div>
-    <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">RUNTIME</span><h3 class="mt-4 text-xl font-semibold">Canonical causal state</h3><p class="mt-3 text-sm leading-6 text-slate-400">Normalize and preserve the live market events that trading intelligence is allowed to consume.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">REPLAY</span><h3 class="mt-4 text-xl font-semibold">Same decision path</h3><p class="mt-3 text-sm leading-6 text-slate-400">Replay the recorded event sequence through the same runtime rather than a separate simulation implementation.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">ASSURANCE</span><h3 class="mt-4 text-xl font-semibold">Live/replay forensic parity</h3><p class="mt-3 text-sm leading-6 text-slate-400">Compare causal fields, decision gates and outcomes to expose where production diverged.</p></article>
-      <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">EXECUTION</span><h3 class="mt-4 text-xl font-semibold">Fail-closed external action</h3><p class="mt-3 text-sm leading-6 text-slate-400">Separate decision authority from execution intent, then reconcile accepted orders and positions to broker truth.</p></article>
+    <div class="mx-auto max-w-4xl text-center"><p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">THE JUNCTION</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">The decision should be visible before the order is possible.</h2><p class="mt-6 text-lg leading-8 text-slate-400">A junction is where current market state meets the user's strategy, risk and execution rules. TORAM's product direction is to make those gates explicit and inspectable instead of hiding the entire decision inside a black box.</p></div>
+    <div class="mt-12 grid gap-4 md:grid-cols-5">
+      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-cyan-300">MARKET</span><h3 class="mt-3 font-semibold">State gate</h3><p class="mt-2 text-sm leading-6 text-slate-500">What is observable now?</p></div>
+      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-violet-300">STRATEGY</span><h3 class="mt-3 font-semibold">Logic gate</h3><p class="mt-2 text-sm leading-6 text-slate-500">Does the user's setup qualify?</p></div>
+      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-sky-300">POSITION</span><h3 class="mt-3 font-semibold">State-machine gate</h3><p class="mt-2 text-sm leading-6 text-slate-500">Enter, wait, hold or exit?</p></div>
+      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-amber-300">RISK</span><h3 class="mt-3 font-semibold">Safety gate</h3><p class="mt-2 text-sm leading-6 text-slate-500">Is action still permitted?</p></div>
+      <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><span class="text-xs font-black text-emerald-300">EXECUTION</span><h3 class="mt-3 font-semibold">Action gate</h3><p class="mt-2 text-sm leading-6 text-slate-500">Paper, user approval or broker intent.</p></div>
     </div>
-    <div class="mx-auto mt-10 max-w-5xl rounded-3xl border border-white/10 bg-slate-950/60 p-7">
-      <p class="text-xs font-black tracking-[0.14em] text-slate-500">TARGET OPERATING PATH</p>
-      <p class="mt-4 font-mono text-sm leading-7 text-slate-300">market data → canonical state → trading intelligence → authority / risk → execution intent → broker outcome → reconciliation → forensic replay</p>
-    </div>
+    <div class="mx-auto mt-10 max-w-5xl rounded-3xl border border-white/10 bg-slate-950/60 p-7 text-center"><p class="font-mono text-sm leading-7 text-slate-300">market state → strategy gates → position state → risk permission → paper / approved execution → result</p></div>
   </div>
 </section>
-<section id="backtest" class="py-24 sm:py-28">
+
+<section id="loop" class="py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-start">
-      <div><p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">WHY NOT A FREE BACKTESTER?</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Use one. TORAM is solving a different layer.</h2><p class="mt-6 text-lg leading-8 text-slate-400">Open research and backtesting engines are valuable. Some already use the same strategy code for backtest and live trading. TORAM is focused on the production assurance problem that remains after the strategy has been written.</p></div>
+      <div><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">ONE DEFINITION, THREE MODES</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Replay it. Run it in live paper. Then decide whether it belongs in live execution.</h2><p class="mt-6 text-lg leading-8 text-slate-400">Many products already provide strategy builders, backtests or paper trading. TORAM's thesis is not that those features are new. The value is continuity: the same strategy definition, gates and state path should remain inspectable as the user moves from recorded market history to the live market and, where appropriate, to broker execution.</p></div>
       <div class="space-y-4">
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Backtesting</strong><p class="mt-2 text-sm leading-6 text-slate-500">Would this strategy have behaved well against a historical simulation?</p></div>
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Live trading engine</strong><p class="mt-2 text-sm leading-6 text-slate-500">Can the strategy receive live data and send orders to a brokerage?</p></div>
-        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><strong class="text-emerald-200">TORAM production assurance</strong><p class="mt-2 text-sm leading-6 text-slate-400">Can we prove the causal state used in production, reproduce the same decision path, fail closed when that state is invalid and reconcile the resulting external action?</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">REPLAY</strong><p class="mt-2 text-sm leading-6 text-slate-500">Use recorded market state to understand exactly where the strategy would wait, enter, hold or exit.</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">LIVE PAPER</strong><p class="mt-2 text-sm leading-6 text-slate-500">Feed the same logic with the current market while keeping capital out of the loop.</p></div>
+        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><strong class="text-emerald-200">LIVE EXECUTION</strong><p class="mt-2 text-sm leading-6 text-slate-400">Only when supported, explicitly enabled and permitted by the user's broker/account controls does the same gated path become eligible to produce an execution intent.</p></div>
+        <div class="rounded-2xl border border-amber-300/20 bg-amber-300/[.035] p-5"><strong class="text-amber-200">INSPECT AFTERWARD</strong><p class="mt-2 text-sm leading-6 text-slate-400">The user should be able to return to the timeline and see what the strategy saw, which gate changed and why the state moved.</p></div>
       </div>
     </div>
   </div>
 </section>
-<section id="proof" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
+
+<section id="backtest" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
-      <div><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">CURRENT INTERNAL ENGINEERING PROOF</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Prove determinism before claiming scale.</h2><p class="mt-6 text-lg leading-8 text-slate-400">The first reference implementation is intentionally narrow: NIFTY derivatives. The current proof is not a return claim. It is whether a controlled live session can be reconstructed through replay without changing the causal decision path.</p></div>
+    <div class="grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-start">
+      <div><p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">WHY NOT A FREE BACKTESTER?</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Use one. The consumer wedge is not “we invented backtesting.”</h2><p class="mt-6 text-lg leading-8 text-slate-400">The differentiation has to come from the operating path around the strategy: the same junction gates across replay and live paper, visible state transitions, controlled execution permission and a runtime that can scale into stronger production assurance.</p></div>
       <div class="grid gap-4 sm:grid-cols-2">
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><p class="text-3xl font-semibold text-white">74,519</p><p class="mt-2 text-sm leading-6 text-slate-500">live observations aligned with replay through the accepted cutoff</p></div>
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><p class="text-3xl font-semibold text-white">18 / 18</p><p class="mt-2 text-sm leading-6 text-slate-500">completed Chapter 21 trades reproduced on the same decision path</p></div>
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><p class="text-3xl font-semibold text-white">53 / 53</p><p class="mt-2 text-sm leading-6 text-slate-500">decision-gate fields with zero mismatches in the accepted comparison</p></div>
-        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><p class="text-3xl font-semibold text-emerald-200">39 / 39</p><p class="mt-2 text-sm leading-6 text-slate-400">causal FUT/NIFTY fields with zero mismatches in the accepted comparison</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Free research tools</strong><p class="mt-2 text-sm leading-6 text-slate-500">Excellent for idea generation, charting, historical testing and learning.</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Strategy platforms</strong><p class="mt-2 text-sm leading-6 text-slate-500">Many already support rule builders, paper trading and deployment. TORAM must earn differentiation beyond feature checklists.</p></div>
+        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5 sm:col-span-2"><strong class="text-emerald-200">TORAM product thesis</strong><p class="mt-2 text-sm leading-6 text-slate-400">Make the state transition and execution boundary inspectable, keep one strategy definition across modes, and let the same architecture scale from a simple personal workflow into a governed professional runtime.</p></div>
       </div>
     </div>
-    <div class="mt-8 rounded-2xl border border-white/10 bg-slate-950/60 p-5 text-sm leading-6 text-slate-500">Internal controlled evidence from 16 September 2026. It demonstrates one narrow live/replay reconstruction result through the accepted cutoff. It is not audited investment performance, a return guarantee, regulatory certification or proof that every future session will reproduce exactly.</div>
   </div>
 </section>
+
 <section id="users" class="py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl text-center"><p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">WHO TORAM IS FOR</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Teams that can create trading intelligence — and need to trust it in production.</h2></div>
+    <div class="mx-auto max-w-4xl text-center"><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">WHO TORAM IS FOR</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">From one self-directed user to sophisticated institutional trading infrastructure.</h2><p class="mt-6 text-lg leading-8 text-slate-400">The product should not require the smallest user to operate an institutional stack, and it should not force the largest user into a consumer toy. The same core runtime can be packaged at different levels of control and scale.</p></div>
     <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">QUANT & PROP DESKS</span><p class="mt-4 text-lg leading-7 text-slate-200">Reduce research/live divergence and reconstruct exactly why a production decision occurred.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">ALGO PROVIDERS</span><p class="mt-4 text-lg leading-7 text-slate-200">Put a reusable runtime, replay and assurance layer around proprietary strategy logic.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">BROKERS & TRADING TECH</span><p class="mt-4 text-lg leading-7 text-slate-200">Strengthen production controls, observability and post-trade forensic workflows around algorithmic systems.</p></article>
-      <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">PROFESSIONAL ALGO TEAMS</span><p class="mt-4 text-lg leading-7 text-slate-200">Move models from research to paper and live trading with a controlled evidence path.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">SELF-DIRECTED USER</span><h3 class="mt-4 text-xl font-semibold">One instrument. One strategy.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Define gates, replay a session and run the same logic in live paper without writing an institutional platform.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">ADVANCED SYSTEMATIC TRADER</span><h3 class="mt-4 text-xl font-semibold">More control and automation.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Version strategies, add richer gates, connect supported execution and inspect divergences between expected and observed behavior.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">PROFESSIONAL DESK</span><h3 class="mt-4 text-xl font-semibold">Shared runtime and assurance.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Run multiple strategies and instruments with stronger controls, auditability, broker adapters and team-level operations.</p></article>
+      <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">INSTITUTIONAL FUND / BROKER</span><h3 class="mt-4 text-xl font-semibold">Governed infrastructure.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Private deployments, entitlements, reconciliation, production assurance and integration into institutional workflows.</p></article>
     </div>
   </div>
 </section>
-<section id="vision" class="border-t border-white/10 bg-white/[.018] px-6 py-24 lg:px-8">
+
+<section class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
+      <div><p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">THE GTM WEDGE</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Put a small, useful version in users' hands first.</h2><p class="mt-6 text-lg leading-8 text-slate-400">The consumer product can be the distribution wedge: a simple single-instrument loop that lets users define their own strategy gates, replay them and watch the same logic in live paper. The company can then expand the same runtime upward into professional and institutional packages rather than starting with a long enterprise integration cycle only.</p></div>
+      <div class="space-y-4">
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">1 · Acquire through utility</strong><p class="mt-2 text-sm leading-6 text-slate-500">A useful replay + live-paper workflow gives an individual user an immediate reason to try TORAM.</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">2 · Convert through continuity</strong><p class="mt-2 text-sm leading-6 text-slate-500">Users pay for deeper replay, longer retention, more strategies, execution integrations and richer diagnostics.</p></div>
+        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><strong class="text-emerald-200">3 · Expand through infrastructure</strong><p class="mt-2 text-sm leading-6 text-slate-400">Professional users and firms need stronger controls, private deployment, team governance, broker reconciliation and assurance.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vision" class="px-6 py-24 lg:px-8">
   <div class="mx-auto max-w-7xl rounded-3xl border border-emerald-300/20 bg-gradient-to-br from-emerald-300/[.10] to-cyan-300/[.04] p-8 sm:p-10 lg:p-12">
     <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE VISION</p>
-    <h2 class="mt-4 max-w-5xl text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Make production assurance a standard layer of algorithmic and AI trading.</h2>
-    <p class="mt-6 max-w-4xl text-lg leading-8 text-slate-400">Start with Indian derivatives. Become broker-agnostic. Expand across exchanges, asset classes and forms of trading intelligence. The strategy can change; the obligation to know what the system saw, why it acted, whether it can be reproduced and what happened externally remains.</p>
-    <p class="mt-8 text-xl font-semibold text-emerald-200">Market observation → intelligence → controlled action → reproducible evidence.</p>
+    <h2 class="mt-4 max-w-5xl text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">One runtime from personal strategy testing to institutional production assurance.</h2>
+    <p class="mt-6 max-w-4xl text-lg leading-8 text-slate-400">Start with one instrument and a visible strategy loop. Let the same core architecture scale across brokers, instruments, teams and asset classes. The user experience changes with scale; the underlying discipline does not: explicit state, explicit gates, controlled action and the ability to inspect what happened.</p>
+    <p class="mt-8 text-xl font-semibold text-emerald-200">Define → replay → live paper → controlled execution → inspect → scale.</p>
   </div>
 </section>
 </main>
-<footer class="border-t border-white/10 bg-slate-950 py-10"><div class="mx-auto max-w-7xl px-6 text-sm leading-6 text-slate-500 lg:px-8"><strong class="tracking-[0.16em] text-slate-200">TORAM</strong><p class="mt-3 max-w-5xl">TORAM is an in-development financial-market intelligent infrastructure project. Public evidence describes engineering tests and product direction, not investment advice, audited trading performance, guaranteed returns, regulatory certification or a claim of regulatory approval.</p></div></footer>
+<footer class="border-t border-white/10 bg-slate-950 py-10"><div class="mx-auto max-w-7xl px-6 text-sm leading-6 text-slate-500 lg:px-8"><strong class="tracking-[0.16em] text-slate-200">TORAM</strong><p class="mt-3 max-w-5xl">TORAM is an in-development financial-market intelligent infrastructure project. Product descriptions are directional and may change. Nothing on this page is investment advice, a recommendation, a performance claim, a guarantee of returns or a claim of regulatory approval. Live execution availability depends on supported brokers, account permissions and applicable market rules.</p></div></footer>
 </body>
 </html>
