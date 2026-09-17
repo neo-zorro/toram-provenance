@@ -1,103 +1,106 @@
 # TORAM public concept page
 
-**Financial-market intelligent infrastructure.**
+**Financial-market intelligent infrastructure — from one instrument in a user's hands to institutional production assurance.**
 
-TORAM is being developed as the **production assurance layer between market data, trading intelligence and broker execution**.
+TORAM is being developed around a simple product idea:
 
-The public thesis is simple:
+> **Define the gates. Replay the strategy. Run the same logic in live paper. Enable real execution only when the user, broker and risk controls allow it.**
 
-> Trading intelligence is only useful if production behaves as intended.
+The smallest useful version should not require an institutional stack. A self-directed user should be able to choose one instrument, express entry/hold/exit/risk conditions as explicit gates, replay recorded market history, and watch the same strategy definition run against the live market in paper mode.
 
-Research and backtesting can tell a team what a strategy would have done against historical data. Production infrastructure must answer a different set of questions:
+The same core runtime is intended to scale upward into stronger controls for advanced traders, professional desks, institutional funds and brokers.
 
-- what causal market state did the engine actually see;
-- was that state still fresh, ordered and complete;
-- did live and replay traverse the same decision path;
-- can the decision be reconstructed later;
-- did execution fail closed when state became unreliable; and
-- does the local system agree with broker truth after external action occurred?
+## The consumer wedge
 
-## What TORAM is
+The initial product loop is deliberately narrow:
 
-TORAM is not positioned as a signal service or a single proprietary trading strategy.
+1. choose one supported instrument;
+2. define a strategy using explicit market, strategy, position, risk and execution gates;
+3. replay a recorded session through that definition;
+4. inspect why the strategy waited, entered, held or exited;
+5. run the same definition against the live market in paper mode; and
+6. where supported and explicitly enabled, make the same gated path eligible for broker execution.
 
-It is infrastructure for trading intelligence, including deterministic rules, state machines, quantitative models, machine-learning models and future AI policy models.
+The value proposition is not merely that backtesting, strategy builders or paper trading exist. Those are already established product categories.
 
-The target operating path is:
+The TORAM thesis is **continuity and inspectability**: the same strategy definition and state path should remain visible as the user moves from replay to live paper and, where appropriate, to controlled execution.
+
+## Junction gates
+
+A junction is the point where current market state meets the user's strategy, risk and execution rules.
+
+A simplified path is:
 
 ```text
-market data
-  -> canonical causal state
-  -> trading intelligence
-  -> authority / risk
-  -> execution intent
-  -> broker outcome
-  -> reconciliation
-  -> forensic replay
+market state
+  -> strategy gates
+  -> position state
+  -> risk permission
+  -> paper / approved execution
+  -> result
 ```
 
-The product direction is organized around four layers:
+The product direction is to make these transitions explicit rather than burying the entire decision inside an opaque black box.
 
-1. **Runtime** — preserve canonical causal market state.
-2. **Replay** — replay the recorded event sequence through the same decision runtime.
-3. **Assurance** — compare live and replay causal fields, gates and outcomes to expose divergence.
-4. **Execution** — fail closed when state is unsafe and reconcile broker acknowledgements, fills and positions.
+## Why free backtesting tools do not remove the opportunity
 
-## Why free backtesting tools do not remove the problem
+Free and commercial platforms already provide excellent charting, strategy builders, backtests, paper trading and, in some cases, live deployment.
 
-Free and open-source research engines are valuable. Some already support research, backtesting and live trading with the same strategy code.
+TORAM should not claim those features as unique.
 
-TORAM is not trying to replace them.
+Its differentiation has to be earned through:
 
-The focus is the production assurance layer after research:
+- one inspectable strategy/state definition across replay and live modes;
+- visible gate-by-gate state transitions;
+- explicit separation of strategy logic, risk permission and execution authority;
+- causal market-state preservation;
+- broker reconciliation when real execution is enabled; and
+- a runtime architecture that can scale from a personal workflow into professional production assurance.
 
-- causal state provenance;
-- live/replay parity;
-- freshness, gap and reconnect boundaries;
-- fail-closed execution authority;
-- broker reconciliation; and
-- forensic evidence after a real production session.
+## Who TORAM is for
 
-Working principle:
+The intended product ladder spans:
 
-> **TORAM starts where the backtest stops.**
+- **self-directed users** — one instrument, one strategy, replay and live paper;
+- **advanced systematic traders** — richer gates, versioned strategies and supported execution integrations;
+- **professional desks** — multiple strategies and instruments with stronger controls and diagnostics; and
+- **institutional funds / brokers** — private deployment, entitlements, reconciliation, auditability and production assurance.
 
-## Current narrow proving ground
+The user experience should become more sophisticated with scale without requiring a completely different underlying runtime.
 
-The first reference implementation is NIFTY derivatives.
+## Go-to-market thesis
 
-The strongest current internal evidence is not an investment-return claim. It is a controlled live/replay reconstruction result from **16 September 2026**.
+The consumer application is a distribution wedge, not the entire company.
 
-Through the accepted cutoff:
+A simple replay + live-paper workflow can put TORAM in users' hands quickly and create a natural expansion path:
 
-- **74,519** live observations aligned with replay;
-- **18 / 18** completed Chapter 21 trades reproduced on the same decision path;
-- **53 / 53** decision-gate fields had zero mismatches; and
-- **39 / 39** causal FUT/NIFTY fields had zero mismatches.
+```text
+personal utility
+  -> paid power-user features
+  -> professional workflow
+  -> team / institutional infrastructure
+```
 
-This is narrow internal engineering evidence. It is not audited performance, a return guarantee, regulatory certification or proof that every future session will reproduce exactly.
+Possible monetization layers include deeper replay and data retention, additional strategies or instruments, execution integrations, diagnostics, team features, private deployment and enterprise assurance.
 
-## Intended B2B users
-
-TORAM is aimed at teams that already know how to create trading intelligence and need stronger production controls:
-
-- quantitative and proprietary trading desks;
-- algorithm providers;
-- brokers and trading-technology teams; and
-- professional research teams moving strategies from simulation to paper and live production.
+These are product and pricing hypotheses until validated with real users.
 
 ## Vision
 
-Start with Indian derivatives. Become broker-agnostic. Expand across exchanges, asset classes and forms of trading intelligence.
+Start with one instrument and an inspectable strategy loop.
+
+Scale the same core architecture across brokers, instruments, teams, asset classes and forms of trading intelligence.
 
 The long-term vision is:
 
-> **Make production assurance a standard layer of algorithmic and AI trading.**
+> **One runtime from personal strategy testing to institutional production assurance.**
 
-The strategy can change. The obligation to know what the system saw, why it acted, whether the decision can be reproduced, and what the broker actually did does not.
+The common discipline is explicit throughout:
+
+> **Define → replay → live paper → controlled execution → inspect → scale.**
 
 ## Public disclosure boundary
 
 The public page intentionally avoids publishing proprietary strategy mathematics, private runtime implementation details, credentials, customer information, investor materials and unsupported return claims.
 
-Public evidence is described as engineering evidence with its limitations stated explicitly.
+Product descriptions are directional and may change. Nothing on the page is investment advice, a recommendation, a guarantee of returns or a claim of regulatory approval.
