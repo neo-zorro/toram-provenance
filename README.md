@@ -1,35 +1,33 @@
-# TORAM public concept page
+# TORAM public product direction
 
-**Financial-market intelligent infrastructure — from one instrument in a user's hands to institutional production assurance.**
+**Financial-market intelligent infrastructure for systematic trading — from one instrument in a user's hands to professional and institutional workflows.**
 
-TORAM is being developed around a simple product idea:
+TORAM is being developed around a simple idea:
 
-> **Define the gates. Replay the strategy. Run the same logic in live paper. Enable real execution only when the user, broker and risk controls allow it.**
+> **Define the strategy. Keep every decision visible. Use the same logic from replay to the live market.**
 
-The smallest useful version should not require an institutional stack. A self-directed user should be able to choose one instrument, express entry/hold/exit/risk conditions as explicit gates, replay recorded market history, and watch the same strategy definition run against the live market in paper mode.
+A user should be able to begin with one supported instrument, define entry / wait / hold / exit / risk conditions as explicit gates, replay recorded market history, and run the same strategy definition against the live market in paper mode.
 
-The same core runtime is intended to scale upward into stronger controls for advanced traders, professional desks, institutional funds and brokers.
+Where supported and explicitly enabled, the same gated path can later become eligible for controlled broker execution.
 
-## The consumer wedge
+## The workspace
 
-The initial product loop is deliberately narrow:
+TORAM is designed as an inspectable trading workspace rather than a black-box signal generator.
 
-1. choose one supported instrument;
-2. define a strategy using explicit market, strategy, position, risk and execution gates;
-3. replay a recorded session through that definition;
+The core experience is:
+
+1. choose a supported instrument;
+2. define the strategy and its gates;
+3. replay recorded market state;
 4. inspect why the strategy waited, entered, held or exited;
-5. run the same definition against the live market in paper mode; and
-6. where supported and explicitly enabled, make the same gated path eligible for broker execution.
+5. run the same definition in live paper; and
+6. keep real execution behind separate user, risk, broker and account permissions.
 
-The value proposition is not merely that backtesting, strategy builders or paper trading exist. Those are already established product categories.
-
-The TORAM thesis is **continuity and inspectability**: the same strategy definition and state path should remain visible as the user moves from replay to live paper and, where appropriate, to controlled execution.
+The value is continuity and inspectability: the strategy should keep the same meaning while the market-state source moves from replay to live.
 
 ## Junction gates
 
-A junction is the point where current market state meets the user's strategy, risk and execution rules.
-
-A simplified path is:
+A junction is where current market state meets strategy, position, risk and execution rules.
 
 ```text
 market state
@@ -40,67 +38,70 @@ market state
   -> result
 ```
 
-The product direction is to make these transitions explicit rather than burying the entire decision inside an opaque black box.
+The user should be able to see which gate passed, failed or changed before an action occurs.
 
-## Why free backtesting tools do not remove the opportunity
+## Replay, live paper and live execution
 
-Free and commercial platforms already provide excellent charting, strategy builders, backtests, paper trading and, in some cases, live deployment.
+### Replay
 
-TORAM should not claim those features as unique.
+Use recorded market history to inspect the decision path and state transitions.
 
-Its differentiation has to be earned through:
+### Live paper
 
-- one inspectable strategy/state definition across replay and live modes;
-- visible gate-by-gate state transitions;
-- explicit separation of strategy logic, risk permission and execution authority;
-- causal market-state preservation;
-- broker reconciliation when real execution is enabled; and
-- a runtime architecture that can scale from a personal workflow into professional production assurance.
+Run the same strategy definition against the current market without sending real orders.
+
+### Live execution
+
+Where supported and explicitly enabled, an eligible strategy can produce broker execution intents through the same controlled path.
+
+### Review
+
+Return to the timeline afterward and understand what the strategy saw, which gate changed and why the state moved.
 
 ## Who TORAM is for
 
-The intended product ladder spans:
+The same core model is intended to become deeper as the user becomes more sophisticated.
 
-- **self-directed users** — one instrument, one strategy, replay and live paper;
-- **advanced systematic traders** — richer gates, versioned strategies and supported execution integrations;
-- **professional desks** — multiple strategies and instruments with stronger controls and diagnostics; and
-- **institutional funds / brokers** — private deployment, entitlements, reconciliation, auditability and production assurance.
+### Self-directed users
 
-The user experience should become more sophisticated with scale without requiring a completely different underlying runtime.
+One instrument, one strategy, replay, live paper and a visible decision timeline.
 
-## Go-to-market thesis
+### Pro traders and pro desks
 
-The consumer application is a distribution wedge, not the entire company.
+Richer strategy definitions, multiple strategy versions, stronger diagnostics and controlled execution workflows.
 
-A simple replay + live-paper workflow can put TORAM in users' hands quickly and create a natural expansion path:
+### Quant desks
 
-```text
-personal utility
-  -> paid power-user features
-  -> professional workflow
-  -> team / institutional infrastructure
-```
+Reusable state definitions, multiple instruments, replay, diagnostics and team-level strategy controls.
 
-Possible monetization layers include deeper replay and data retention, additional strategies or instruments, execution integrations, diagnostics, team features, private deployment and enterprise assurance.
+### Institutions, funds and brokers
 
-These are product and pricing hypotheses until validated with real users.
+Private deployment, entitlements, broker reconciliation, auditability and stronger production-assurance workflows.
+
+The goal is not to force every user into institutional complexity. The same underlying concepts should remain understandable at every level.
+
+## Product principle
+
+> **Every action should have a visible reason.**
+
+TORAM keeps strategy logic, position state, risk permission and execution authority as distinct parts of the operating path.
+
+A useful system should show more than the final trade or P&L. It should make it possible to understand what state the strategy was in and why that state changed.
 
 ## Vision
 
-Start with one instrument and an inspectable strategy loop.
+The long-term direction is:
 
-Scale the same core architecture across brokers, instruments, teams, asset classes and forms of trading intelligence.
+> **One operating environment for trading intelligence.**
 
-The long-term vision is:
+Start with a single user's strategy. Extend the same principles across instruments, brokers, teams, asset classes and institutional controls without losing inspectability.
 
-> **One runtime from personal strategy testing to institutional production assurance.**
+The common workflow remains:
 
-The common discipline is explicit throughout:
-
-> **Define → replay → live paper → controlled execution → inspect → scale.**
+> **Define → Replay → Live Paper → Controlled Execution → Review**
 
 ## Public disclosure boundary
 
-The public page intentionally avoids publishing proprietary strategy mathematics, private runtime implementation details, credentials, customer information, investor materials and unsupported return claims.
+The public page intentionally avoids proprietary strategy mathematics, private runtime implementation details, credentials, investor materials, internal engineering evidence, customer information and unsupported return claims.
 
-Product descriptions are directional and may change. Nothing on the page is investment advice, a recommendation, a guarantee of returns or a claim of regulatory approval.
+Product descriptions are directional and may change. Nothing on the page is investment advice, a recommendation, a performance claim, a guarantee of returns or a claim of regulatory approval.
