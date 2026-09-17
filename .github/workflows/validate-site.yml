@@ -39,42 +39,53 @@ jobs:
           test -s _site/index.html
           test -s _site/404.html
           test -s _site/styles.css
+
           grep -Fq "FINANCIAL-MARKET INTELLIGENT INFRASTRUCTURE" _site/index.html
-          grep -Fq "Start with one instrument." _site/index.html
-          grep -Fq "START SIMPLE" _site/index.html
-          grep -Fq "THE JUNCTION" _site/index.html
+          grep -Fq "Define the strategy." _site/index.html
+          grep -Fq "See every decision." _site/index.html
+          grep -Fq "THE WORKSPACE" _site/index.html
+          grep -Fq "JUNCTION GATES" _site/index.html
+          grep -Fq "Every action should have a visible reason." _site/index.html
           grep -Fq "State gate" _site/index.html
           grep -Fq "Logic gate" _site/index.html
+          grep -Fq "State-machine gate" _site/index.html
           grep -Fq "Safety gate" _site/index.html
           grep -Fq "Action gate" _site/index.html
-          grep -Fq "ONE DEFINITION, THREE MODES" _site/index.html
+          grep -Fq "ONE STRATEGY, MULTIPLE MODES" _site/index.html
           grep -Fq "REPLAY" _site/index.html
           grep -Fq "LIVE PAPER" _site/index.html
           grep -Fq "LIVE EXECUTION" _site/index.html
-          grep -Fq "WHY NOT A FREE BACKTESTER?" _site/index.html
-          grep -Fq "The consumer wedge is not" _site/index.html
-          grep -Fq "WHO TORAM IS FOR" _site/index.html
+          grep -Fq "FOR EVERY LEVEL OF SYSTEMATIC TRADING" _site/index.html
           grep -Fq "SELF-DIRECTED USER" _site/index.html
-          grep -Fq "ADVANCED SYSTEMATIC TRADER" _site/index.html
-          grep -Fq "PROFESSIONAL DESK" _site/index.html
-          grep -Fq "INSTITUTIONAL FUND / BROKER" _site/index.html
-          grep -Fq "THE GTM WEDGE" _site/index.html
-          grep -Fq "THE VISION" _site/index.html
-          grep -Fq "One runtime from personal strategy testing to institutional production assurance." _site/index.html
-          ! grep -Fq "CURRENT INTERNAL ENGINEERING PROOF" _site/index.html
+          grep -Fq "PRO TRADER / PRO DESK" _site/index.html
+          grep -Fq "QUANT DESK" _site/index.html
+          grep -Fq "INSTITUTION / FUND / BROKER" _site/index.html
+          grep -Fq "UNDERSTAND THE DECISION" _site/index.html
+          grep -Fq "One operating environment for trading intelligence." _site/index.html
+          grep -Fq "Define → Replay → Live Paper → Controlled Execution → Review" _site/index.html
+
+          ! grep -Fiq "GTM" _site/index.html
+          ! grep -Fiq "go-to-market" _site/index.html
+          ! grep -Fiq "consumer wedge" _site/index.html
+          ! grep -Fiq "distribution wedge" _site/index.html
+          ! grep -Fiq "WHY NOT A FREE BACKTESTER" _site/index.html
+          ! grep -Fiq "free backtester" _site/index.html
+          ! grep -Fiq "CURRENT INTERNAL ENGINEERING PROOF" _site/index.html
           ! grep -Fq "74,519" _site/index.html
           ! grep -Fq "18 / 18" _site/index.html
           ! grep -Fq "53 / 53" _site/index.html
           ! grep -Fq "39 / 39" _site/index.html
-          ! grep -Fq "Top schools in Chennai" _site/index.html
-          ! grep -Fq "INVESTOR DILIGENCE" _site/index.html
-          ! grep -Fq "PRE-SEED" _site/index.html
-          ! grep -Fq "BUSINESS MODEL" _site/index.html
+          ! grep -Fiq "seed round" _site/index.html
+          ! grep -Fiq "revenue model" _site/index.html
+          ! grep -Fiq "business model" _site/index.html
+          ! grep -Fiq "pricing hypothesis" _site/index.html
+          ! grep -Fiq "investor" _site/index.html
           ! grep -Fq "TORAM-MAIN" _site/index.html
           ! grep -Fq "TORAM-Market-Recorder" _site/index.html
           ! grep -Fq "CloudExecution" _site/index.html
           ! grep -Fq "WebSocket" _site/index.html
           ! grep -Fq "HMAC" _site/index.html
           ! grep -Fq "QuestDB" _site/index.html
+
           grep -q "\\.bg-slate-950" _site/styles.css
-          echo "Public site validated as consumer-to-institutional financial-market infrastructure, non-investor and implementation-safe."
+          echo "Public site validated as a user-first TORAM product narrative with investor and GTM language excluded."
