@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>An answer should earn its authority — TORAM</title>
-  <meta name="description" content="Ask a question. Build the system that can prove the claim. Keep it if the evidence holds. Discard it if it does not." />
+  <title>TORAM — Financial-market intelligent infrastructure</title>
+  <meta name="description" content="TORAM is building the production assurance layer between market data, trading intelligence and broker execution: canonical market state, deterministic replay, fail-closed execution and broker-truth reconciliation." />
   <meta name="theme-color" content="#020617" />
-  <meta property="og:title" content="An answer should earn its authority" />
-  <meta property="og:description" content="Do not rank the answer. Build the proof around the claim." />
+  <meta property="og:title" content="TORAM — Financial-market intelligent infrastructure" />
+  <meta property="og:description" content="Backtests are cheap. Production certainty is not." />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -17,85 +17,106 @@
   <div class="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-5 px-6 lg:px-8">
     <a href="#top" class="flex items-center gap-3 font-semibold tracking-[0.18em]" aria-label="Home"><span class="grid size-9 place-items-center rounded-xl border border-emerald-300/40 bg-emerald-300/5 text-sm font-black text-emerald-300">T</span><span>TORAM</span></a>
     <nav class="hidden items-center gap-7 text-sm text-slate-300 md:flex" aria-label="Primary navigation">
-      <a class="transition hover:text-white" href="#problem">The problem</a>
-      <a class="transition hover:text-white" href="#cycle">The cycle</a>
-      <a class="transition hover:text-white" href="#authority-layer">Authority layer</a>
-      <a class="transition hover:text-white" href="#example">Example</a>
-      <a class="rounded-full border border-emerald-300/40 px-4 py-2 font-semibold text-emerald-300 transition hover:bg-emerald-300 hover:text-slate-950" href="#coming-soon">Coming soon</a>
+      <a class="transition hover:text-white" href="#problem">The production gap</a>
+      <a class="transition hover:text-white" href="#runtime">The runtime</a>
+      <a class="transition hover:text-white" href="#proof">Proof</a>
+      <a class="transition hover:text-white" href="#users">Who it is for</a>
+      <a class="rounded-full border border-emerald-300/40 px-4 py-2 font-semibold text-emerald-300 transition hover:bg-emerald-300 hover:text-slate-950" href="#vision">Vision</a>
     </nav>
   </div>
 </header>
 <main id="main">
 <section id="top" class="relative overflow-hidden border-b border-white/10">
-  <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_10%,rgba(52,211,153,.16),transparent_30rem),radial-gradient(circle_at_85%_15%,rgba(34,211,238,.10),transparent_32rem)]"></div>
+  <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_10%,rgba(52,211,153,.17),transparent_30rem),radial-gradient(circle_at_85%_15%,rgba(34,211,238,.10),transparent_32rem)]"></div>
   <div class="mx-auto grid min-h-[740px] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-[1.08fr_.92fr] lg:px-8 lg:py-24">
     <div>
-      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/[.05] px-3.5 py-2 text-xs font-bold tracking-[0.14em] text-emerald-300">THE ANSWER SHOULD HAVE TO PROVE ITSELF</div>
-      <h1 class="max-w-5xl text-5xl font-semibold leading-[.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">An answer should not win because it ranked first. <span class="text-emerald-300">It should earn its authority.</span></h1>
-      <p class="mt-8 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">Ask a question. Instead of giving you another list, build a temporary system around the claim — one that gathers the evidence, tests it, challenges it and shows whether the statement actually stands.</p>
-      <p class="mt-5 max-w-3xl text-sm leading-6 text-slate-500">If the evidence holds, keep the system. If the claim does not stand, discard it. If the answer can change, keep the cycle alive.</p>
-      <div class="mt-9 flex flex-wrap gap-3"><a href="#cycle" class="rounded-xl bg-emerald-300 px-5 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-emerald-200">See the authority cycle</a><a href="#authority-layer" class="rounded-xl border border-white/10 bg-white/[.03] px-5 py-3.5 text-sm font-bold text-slate-200 transition hover:border-white/20 hover:bg-white/[.06]">What should count as authority?</a></div>
+      <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-300/20 bg-emerald-300/[.05] px-3.5 py-2 text-xs font-bold tracking-[0.14em] text-emerald-300">FINANCIAL-MARKET INTELLIGENT INFRASTRUCTURE</div>
+      <h1 class="max-w-5xl text-5xl font-semibold leading-[.98] tracking-[-0.045em] sm:text-6xl lg:text-7xl">Backtests are cheap. <span class="text-emerald-300">Production certainty is not.</span></h1>
+      <p class="mt-8 max-w-3xl text-lg leading-8 text-slate-300 sm:text-xl">TORAM is building the production assurance layer between market data, trading intelligence and broker execution.</p>
+      <p class="mt-5 max-w-3xl text-sm leading-6 text-slate-500">The objective is simple: preserve the causal market state a strategy actually saw, run live and replay through the same decision path, fail closed when that state is unreliable, and reconcile the final outcome to broker truth.</p>
+      <div class="mt-9 flex flex-wrap gap-3"><a href="#runtime" class="rounded-xl bg-emerald-300 px-5 py-3.5 text-sm font-bold text-slate-950 transition hover:bg-emerald-200">See the runtime</a><a href="#proof" class="rounded-xl border border-white/10 bg-white/[.03] px-5 py-3.5 text-sm font-bold text-slate-200 transition hover:border-white/20 hover:bg-white/[.06]">See the current proof</a></div>
     </div>
     <aside class="rounded-3xl border border-white/10 bg-slate-900/80 p-7 shadow-2xl shadow-black/30 backdrop-blur">
-      <p class="mb-6 text-xs font-extrabold tracking-[0.18em] text-slate-500">A NORMAL QUESTION</p>
-      <p class="text-2xl font-semibold leading-9">“What are the top schools in Chennai?”</p>
+      <p class="mb-6 text-xs font-extrabold tracking-[0.18em] text-slate-500">THE OPERATING PRINCIPLE</p>
+      <p class="text-2xl font-semibold leading-9">Record once. Decide consistently. Replay exactly. Execute safely. Reconcile to broker truth.</p>
       <div class="mt-7 space-y-3 text-sm leading-6 text-slate-400">
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">A “Top 10” page is a claim, not proof.</div>
-        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">Define what “top” means. Find the records. Check the dates. Expose the method. Keep disagreement visible.</div>
-        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.04] p-4 font-semibold text-emerald-200">The answer should be able to show why it stands — or clearly admit that it does not.</div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">A backtest can tell you what a strategy would have done on historical data.</div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-4">Production infrastructure must prove what the live system actually knew, decided and attempted.</div>
+        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.04] p-4 font-semibold text-emerald-200">TORAM starts where the backtest stops.</div>
       </div>
     </aside>
   </div>
 </section>
 <section id="problem" class="py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-end"><div><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE PROBLEM</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Reach is not authority.</h2></div><p class="text-lg leading-8 text-slate-400">A page can rank first. A review can have thousands of likes. A post can be shared millions of times. A product claim can come from a famous company. An image, voice or video can look completely real. None of those facts alone prove the claim.</p></div>
+    <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-end"><div><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE PRODUCTION GAP</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">A strategy can survive research and become a different system in live markets.</h2></div><p class="text-lg leading-8 text-slate-400">Live feeds arrive differently. Timestamps matter. Quotes go stale. Connections break. Order books move while decisions are being made. Simulated fills differ from real fills. Broker state can diverge from local state. The difficult problem is no longer only whether the strategy was profitable in history; it is whether production behaved as designed.</p></div>
     <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">RANKING</span><h3 class="mt-4 text-xl font-semibold">Easy to find.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Discovery is useful. Position is not proof.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">POPULARITY</span><h3 class="mt-4 text-xl font-semibold">Widely repeated.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Views, likes, shares and followers measure reach, not truth.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">HOSTING</span><h3 class="mt-4 text-xl font-semibold">Published somewhere.</h3><p class="mt-3 text-sm leading-6 text-slate-400">A platform carrying a post does not make the post authoritative.</p></article>
-      <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">PROVENANCE</span><h3 class="mt-4 text-xl font-semibold">Can show its chain.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Who created it, who observed it, what evidence exists, when it was true and what changed.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">STATE</span><h3 class="mt-4 text-xl font-semibold">What did the engine actually see?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Preserve the causal observations available at the decision moment.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">TIME</span><h3 class="mt-4 text-xl font-semibold">Was it still valid?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Freshness, ordering, reconnects and gaps change whether state is safe to use.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">DECISION</span><h3 class="mt-4 text-xl font-semibold">Can it be reproduced?</h3><p class="mt-3 text-sm leading-6 text-slate-400">The same evidence should reproduce the same decision path later.</p></article>
+      <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">EXECUTION</span><h3 class="mt-4 text-xl font-semibold">What did the broker actually do?</h3><p class="mt-3 text-sm leading-6 text-slate-400">Intent, acknowledgement, fills, positions and reconciliation must remain distinct.</p></article>
     </div>
   </div>
 </section>
-<section id="cycle" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
+<section id="runtime" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-4xl text-center"><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE AUTHORITY CYCLE</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Build the system that makes the claim earn its authority.</h2><p class="mt-6 text-lg leading-8 text-slate-400">The cycle is created for the question in front of you. It does not need to become a permanent software project.</p></div>
-    <div class="mt-12 grid gap-4 md:grid-cols-3 lg:grid-cols-6">
-      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-cyan-300">01</span><h3 class="mt-3 font-semibold">Ask</h3><p class="mt-2 text-sm leading-6 text-slate-500">What do you need to know?</p></div>
-      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-violet-300">02</span><h3 class="mt-3 font-semibold">Define</h3><p class="mt-2 text-sm leading-6 text-slate-500">What exactly would count as true?</p></div>
-      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-sky-300">03</span><h3 class="mt-3 font-semibold">Gather</h3><p class="mt-2 text-sm leading-6 text-slate-500">Bring the relevant evidence together.</p></div>
-      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-amber-300">04</span><h3 class="mt-3 font-semibold">Verify</h3><p class="mt-2 text-sm leading-6 text-slate-500">Check source, role, method, time and context.</p></div>
-      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-rose-300">05</span><h3 class="mt-3 font-semibold">Challenge</h3><p class="mt-2 text-sm leading-6 text-slate-500">Look for conflict, missing proof and failure.</p></div>
-      <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><span class="text-xs font-black text-emerald-300">06</span><h3 class="mt-3 font-semibold">Decide</h3><p class="mt-2 text-sm leading-6 text-slate-500">Does the claim stand today?</p></div>
+    <div class="mx-auto max-w-4xl text-center"><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE TORAM RUNTIME</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">One causal path from market observation to broker outcome.</h2><p class="mt-6 text-lg leading-8 text-slate-400">TORAM is being developed as infrastructure for trading intelligence — rules, state machines, quantitative models or AI — rather than as one proprietary strategy.</p></div>
+    <div class="mt-12 grid gap-4 md:grid-cols-5">
+      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-cyan-300">01</span><h3 class="mt-3 font-semibold">Canonical market state</h3><p class="mt-2 text-sm leading-6 text-slate-500">Capture and preserve the market events used by the system.</p></div>
+      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-violet-300">02</span><h3 class="mt-3 font-semibold">Same decision runtime</h3><p class="mt-2 text-sm leading-6 text-slate-500">Live and replay feed the same authority path instead of separate strategy implementations.</p></div>
+      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-sky-300">03</span><h3 class="mt-3 font-semibold">Deterministic replay</h3><p class="mt-2 text-sm leading-6 text-slate-500">Reconstruct what the engine knew and why it acted.</p></div>
+      <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><span class="text-xs font-black text-amber-300">04</span><h3 class="mt-3 font-semibold">Fail-closed authority</h3><p class="mt-2 text-sm leading-6 text-slate-500">Stale, missing or disconnected state should remove permission to act.</p></div>
+      <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><span class="text-xs font-black text-emerald-300">05</span><h3 class="mt-3 font-semibold">Broker reconciliation</h3><p class="mt-2 text-sm leading-6 text-slate-500">Execution intent is not treated as broker truth until external state confirms it.</p></div>
     </div>
-    <div class="mx-auto mt-10 max-w-5xl rounded-3xl border border-amber-300/20 bg-amber-300/[.035] p-7 text-center"><p class="text-sm font-bold tracking-[0.12em] text-amber-300">AI DOES THE HEAVY LIFTING. EVIDENCE EARNS THE AUTHORITY.</p><p class="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-300">The system can search, compare, organize, test and keep watch. It should not manufacture authority because it sounds certain.</p></div>
+    <div class="mx-auto mt-10 max-w-5xl rounded-3xl border border-amber-300/20 bg-amber-300/[.035] p-7 text-center"><p class="text-sm font-bold tracking-[0.12em] text-amber-300">FREE BACKTESTING TOOLS ARE USEFUL. TORAM IS NOT TRYING TO REPLACE THEM.</p><p class="mx-auto mt-4 max-w-3xl text-lg leading-8 text-slate-300">Research engines solve historical simulation. TORAM is focused on production assurance: causal state, live/replay parity, fail-closed execution and reconciliation after real external action.</p></div>
   </div>
 </section>
-<section id="authority-layer" class="py-24 sm:py-28">
+<section id="proof" class="py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-end"><div><p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">THE AUTHORITY LAYER</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Do not own truth. Own the proof that lets people judge it.</h2></div><p class="text-lg leading-8 text-slate-400">Every meaningful claim can carry a visible history: who originated it, who actually used or observed it, what evidence is attached, who reproduced it, what conflicts with it, whether it was edited or generated, and whether the authority is still current.</p></div>
-    <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">REVIEWS</span><h3 class="mt-4 text-xl font-semibold">“Did this person really use it?”</h3><p class="mt-3 text-sm leading-6 text-slate-400">A review can show purchase, use, role, date, conditions and attached evidence. Without that, it can remain visible but unverified.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">PRODUCT CLAIMS</span><h3 class="mt-4 text-xl font-semibold">“Who can stand behind this statement?”</h3><p class="mt-3 text-sm leading-6 text-slate-400">The maker may be authoritative for its own published specification at a point in time. Independent performance still needs independent evidence.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-sky-300">POSTS & MESSAGES</span><h3 class="mt-4 text-xl font-semibold">Hosting is not endorsement.</h3><p class="mt-3 text-sm leading-6 text-slate-400">A platform can prove that content was posted. That alone does not prove the statement inside it.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">IMAGES & VIDEO</span><h3 class="mt-4 text-xl font-semibold">Realistic is not the same as real.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Creator, capture, edit and generation history should travel with media when available.</p></article>
-      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-rose-300">AI NARRATIVES</span><h3 class="mt-4 text-xl font-semibold">Composition is not provenance.</h3><p class="mt-3 text-sm leading-6 text-slate-400">AI can create fluent audio, text, images and video. That output should not inherit authority unless the underlying claims and content holders can support it.</p></article>
-      <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">AUTHORITY HISTORY</span><h3 class="mt-4 text-xl font-semibold">Authority can change.</h3><p class="mt-3 text-sm leading-6 text-slate-400">Supported, disputed, stale, withdrawn, superseded or revoked should remain part of the visible record.</p></article>
+    <div class="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-start">
+      <div><p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">CURRENT INTERNAL PROOF</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">We are proving determinism before claiming scale.</h2><p class="mt-6 text-lg leading-8 text-slate-400">The first reference system is intentionally narrow: NIFTY derivatives. The important result is not a return claim. It is whether a full live session can be reconstructed through replay without changing the causal decision path.</p></div>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><p class="text-3xl font-semibold text-white">74,519</p><p class="mt-2 text-sm leading-6 text-slate-500">live observations aligned to replay through the controlled cutoff</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><p class="text-3xl font-semibold text-white">18 / 18</p><p class="mt-2 text-sm leading-6 text-slate-500">completed Chapter 21 trades reproduced on the same decision path</p></div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><p class="text-3xl font-semibold text-white">0</p><p class="mt-2 text-sm leading-6 text-slate-500">mismatches across 53 decision-gate fields in the accepted comparison</p></div>
+        <div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><p class="text-3xl font-semibold text-emerald-200">0</p><p class="mt-2 text-sm leading-6 text-slate-400">mismatches across 39 causal FUT/NIFTY fields in the accepted comparison</p></div>
+      </div>
     </div>
-    <div class="mx-auto mt-10 max-w-5xl rounded-3xl border border-emerald-300/20 bg-emerald-300/[.04] p-7 text-center"><p class="text-xl font-semibold text-slate-100">The moat is the authority graph.</p><p class="mx-auto mt-3 max-w-3xl text-sm leading-6 text-slate-400">Every claim, proof, first-hand attestation, challenge, failure, correction and expiry can make the next authority cycle better — without turning popularity into truth.</p></div>
+    <div class="mt-8 rounded-2xl border border-white/10 bg-white/[.02] p-5 text-sm leading-6 text-slate-500">Internal controlled evidence from 16 September 2026. This demonstrates a narrow live/replay reconstruction result; it is not audited investment performance, a return guarantee or proof that every future session will match.</div>
   </div>
 </section>
-<section id="example" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
+<section id="users" class="border-y border-white/10 bg-white/[.018] py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-start"><div><p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">A SIMPLE EXAMPLE</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">“Top schools in Chennai” should be a claim to prove, not a page to rank.</h2><p class="mt-6 text-lg leading-8 text-slate-400">The system first asks what “top” means for this decision. Academic outcomes? Accreditation? Student achievement? Parent experience? Affordability? The answer becomes meaningful only after the criteria are explicit.</p></div>
-      <div class="space-y-4"><div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Define the claim.</strong><p class="mt-2 text-sm leading-6 text-slate-500">“Which Chennai schools are strongest under these stated criteria for this stated period?”</p></div><div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Bring in evidence that can actually support it.</strong><p class="mt-2 text-sm leading-6 text-slate-500">Official records, dated outcomes, declared methodology, independent checks and first-hand experience can each carry different kinds of authority.</p></div><div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Penalize unsupported claims by withholding authority.</strong><p class="mt-2 text-sm leading-6 text-slate-500">A commercial “Top 10” page can remain visible, but its ranking does not become proof unless the method and evidence stand up.</p></div><div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><strong class="text-emerald-200">Return what the evidence supports.</strong><p class="mt-2 text-sm leading-6 text-slate-400">Supported, partly supported, conflicted, unproven or stale — with the reason visible.</p></div></div>
+    <div class="mx-auto max-w-4xl text-center"><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">WHO TORAM IS FOR</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Teams that already know how to generate trading intelligence — and need to trust it in production.</h2></div>
+    <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-cyan-300">QUANT & PROP DESKS</span><p class="mt-4 text-lg leading-7 text-slate-200">Reduce research/live divergence and reconstruct production decisions after the fact.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-violet-300">ALGO PROVIDERS</span><p class="mt-4 text-lg leading-7 text-slate-200">Add a repeatable runtime, replay and audit layer around strategy IP.</p></article>
+      <article class="rounded-3xl border border-white/10 bg-white/[.025] p-6"><span class="text-xs font-black text-amber-300">BROKERS & TRADING TECH</span><p class="mt-4 text-lg leading-7 text-slate-200">Create stronger controls between client intelligence, execution and post-trade truth.</p></article>
+      <article class="rounded-3xl border border-emerald-300/20 bg-emerald-300/[.035] p-6"><span class="text-xs font-black text-emerald-300">RESEARCH → PRODUCTION</span><p class="mt-4 text-lg leading-7 text-slate-200">Move strategies from simulation to controlled paper and live deployment with evidence.</p></article>
     </div>
   </div>
 </section>
-<section id="lifecycle" class="py-24 sm:py-28"><div class="mx-auto max-w-7xl px-6 lg:px-8"><div class="grid gap-12 lg:grid-cols-[1fr_.9fr] lg:items-center"><div><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">USE IT. THEN DECIDE IF IT DESERVES TO STAY.</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">The proof system can be temporary too.</h2><p class="mt-6 text-lg leading-8 text-slate-400">Build the cycle for the question. Let it work. Then delete it, pause it, keep it, clone it or keep it current.</p></div><div class="grid gap-4 sm:grid-cols-2"><div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Delete it.</strong><p class="mt-2 text-sm leading-6 text-slate-500">The question is over.</p></div><div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Pause it.</strong><p class="mt-2 text-sm leading-6 text-slate-500">Keep the proof, stop active work.</p></div><div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Keep it.</strong><p class="mt-2 text-sm leading-6 text-slate-500">The question matters again and again.</p></div><div class="rounded-2xl border border-emerald-300/20 bg-emerald-300/[.035] p-5"><strong class="text-emerald-200">Maintain it.</strong><p class="mt-2 text-sm leading-6 text-slate-400">The truth can change. Keep the cycle alive.</p></div></div></div></div></section>
-<section id="coming-soon" class="px-6 py-24 lg:px-8"><div class="mx-auto max-w-7xl rounded-3xl border border-emerald-300/20 bg-gradient-to-br from-emerald-300/[.10] to-cyan-300/[.04] p-8 sm:p-10 lg:p-12"><p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">COMING SOON</p><h2 class="mt-4 max-w-5xl text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Ask the question. Build the proof. Let the claim earn its authority.</h2><p class="mt-6 max-w-4xl text-lg leading-8 text-slate-400">We are exploring a future where reviews, rankings, posts, product claims and AI-generated narratives do not inherit authority from popularity or presentation. They stand only as far as their provenance and evidence can stand.</p><p class="mt-8 text-xl font-semibold text-emerald-200">Reach can spread a claim. Only evidence should strengthen its authority.</p></div></section>
+<section class="py-24 sm:py-28">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid gap-12 lg:grid-cols-[1fr_.95fr] lg:items-start">
+      <div><p class="text-xs font-extrabold tracking-[0.2em] text-cyan-300">WHY NOW</p><h2 class="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">More automation increases the value of proving what production actually did.</h2><p class="mt-6 text-lg leading-8 text-slate-400">India's market infrastructure is formalizing safer API-based algorithmic trading, exchange empanelment and technology oversight. Globally, market-data and surveillance vendors are investing in same-interface live/historical data and forensic market replay. TORAM is being built for this operating environment.</p></div>
+      <div class="space-y-4 text-sm leading-6 text-slate-400">
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">SEBI:</strong> the February 2025 framework introduced safer participation of retail investors in algorithmic trading.</div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">NSE:</strong> algo providers and trading/risk-management software vendors are evaluated for empanelment on infrastructure and systems, among other parameters.</div>
+        <div class="rounded-2xl border border-white/10 bg-white/[.025] p-5"><strong class="text-slate-100">Global signal:</strong> Trading Technologies launched tick-by-tick Market Replay for forensic surveillance in 2026; Databento offers the same API/data structures for live and historical replay.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="vision" class="px-6 py-24 lg:px-8">
+  <div class="mx-auto max-w-7xl rounded-3xl border border-emerald-300/20 bg-gradient-to-br from-emerald-300/[.10] to-cyan-300/[.04] p-8 sm:p-10 lg:p-12">
+    <p class="text-xs font-extrabold tracking-[0.2em] text-emerald-300">THE VISION</p>
+    <h2 class="mt-4 max-w-5xl text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Make production assurance a standard layer of algorithmic and AI trading.</h2>
+    <p class="mt-6 max-w-4xl text-lg leading-8 text-slate-400">Start with Indian derivatives. Become broker-agnostic. Expand across exchanges, asset classes and trading intelligence. The strategy can change; the requirement to know what the system saw, why it acted, and what the broker actually did does not.</p>
+    <p class="mt-8 text-xl font-semibold text-emerald-200">Canonical market state. Deterministic replay. Live/replay certification. Fail-closed execution. Broker-truth reconciliation.</p>
+  </div>
+</section>
 </main>
-<footer class="border-t border-white/10 bg-slate-950 py-10"><div class="mx-auto max-w-7xl px-6 text-sm leading-6 text-slate-500 lg:px-8"><strong class="tracking-[0.16em] text-slate-200">TORAM</strong><p class="mt-3 max-w-5xl">A public glimpse of a product direction still being proven. The page describes a concept, not a guarantee that every question can be resolved or every claim can be made authoritative.</p></div></footer>
+<footer class="border-t border-white/10 bg-slate-950 py-10"><div class="mx-auto max-w-7xl px-6 text-sm leading-6 text-slate-500 lg:px-8"><strong class="tracking-[0.16em] text-slate-200">TORAM</strong><p class="mt-3 max-w-5xl">TORAM is an in-development financial-market intelligent infrastructure project. Public examples describe product direction and internal engineering evidence, not investment advice, audited trading performance, guaranteed returns or a claim of regulatory approval.</p></div></footer>
 </body>
 </html>
