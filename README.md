@@ -6,50 +6,59 @@ TORAM is being developed as the **production assurance layer between market data
 
 The public thesis is simple:
 
-> Backtesting is necessary. Production assurance is a different problem.
+> Trading intelligence is only useful if production behaves as intended.
 
-A historical simulation can tell a team what a strategy would have done against past data. A production runtime must answer harder questions:
+Research and backtesting can tell a team what a strategy would have done against historical data. Production infrastructure must answer a different set of questions:
 
 - what causal market state did the engine actually see;
-- was that state still fresh and complete;
+- was that state still fresh, ordered and complete;
 - did live and replay traverse the same decision path;
 - can the decision be reconstructed later;
-- did execution fail closed when state was unreliable; and
-- does the local trading system agree with broker truth after the external action occurred?
+- did execution fail closed when state became unreliable; and
+- does the local system agree with broker truth after external action occurred?
 
 ## What TORAM is
 
-TORAM is not positioned as a signal service or a single trading strategy.
+TORAM is not positioned as a signal service or a single proprietary trading strategy.
 
-It is infrastructure for trading intelligence, including:
+It is infrastructure for trading intelligence, including deterministic rules, state machines, quantitative models, machine-learning models and future AI policy models.
 
-- deterministic rules;
-- state machines;
-- quantitative models;
-- machine-learning models; and
-- future AI policy models.
-
-The target runtime path is:
+The target operating path is:
 
 ```text
-canonical market state
-  -> same decision runtime
-  -> deterministic replay
-  -> fail-closed authority / risk
+market data
+  -> canonical causal state
+  -> trading intelligence
+  -> authority / risk
   -> execution intent
   -> broker outcome
-  -> reconciliation and audit
+  -> reconciliation
+  -> forensic replay
 ```
+
+The product direction is organized around four layers:
+
+1. **Runtime** — preserve canonical causal market state.
+2. **Replay** — replay the recorded event sequence through the same decision runtime.
+3. **Assurance** — compare live and replay causal fields, gates and outcomes to expose divergence.
+4. **Execution** — fail closed when state is unsafe and reconcile broker acknowledgements, fills and positions.
 
 ## Why free backtesting tools do not remove the problem
 
-Free and open-source research engines are valuable and can already provide strategy research, simulation and, in some cases, live trading.
+Free and open-source research engines are valuable. Some already support research, backtesting and live trading with the same strategy code.
 
 TORAM is not trying to replace them.
 
-The focus is the production layer after research: causal state, live/replay parity, reconnect and freshness boundaries, external execution, broker reconciliation and forensic evidence.
+The focus is the production assurance layer after research:
 
-The working principle is:
+- causal state provenance;
+- live/replay parity;
+- freshness, gap and reconnect boundaries;
+- fail-closed execution authority;
+- broker reconciliation; and
+- forensic evidence after a real production session.
+
+Working principle:
 
 > **TORAM starts where the backtest stops.**
 
@@ -57,35 +66,25 @@ The working principle is:
 
 The first reference implementation is NIFTY derivatives.
 
-The strongest current internal evidence is not an investment-return claim. It is a live/replay reconstruction result from a controlled full-day session on **16 September 2026**.
+The strongest current internal evidence is not an investment-return claim. It is a controlled live/replay reconstruction result from **16 September 2026**.
 
 Through the accepted cutoff:
 
-- **74,519** live observations aligned to replay;
+- **74,519** live observations aligned with replay;
 - **18 / 18** completed Chapter 21 trades reproduced on the same decision path;
-- **0 mismatches** across 53 decision-gate fields; and
-- **0 mismatches** across 39 causal FUT/NIFTY fields.
+- **53 / 53** decision-gate fields had zero mismatches; and
+- **39 / 39** causal FUT/NIFTY fields had zero mismatches.
 
-This is narrow internal engineering evidence. It is not audited performance, a return guarantee or proof that every future session will reproduce exactly.
+This is narrow internal engineering evidence. It is not audited performance, a return guarantee, regulatory certification or proof that every future session will reproduce exactly.
 
-## Who the product is for
+## Intended B2B users
 
-The intended B2B users are teams that already know how to create trading intelligence and need stronger production controls:
+TORAM is aimed at teams that already know how to create trading intelligence and need stronger production controls:
 
 - quantitative and proprietary trading desks;
 - algorithm providers;
 - brokers and trading-technology teams; and
-- research teams moving strategies from simulation to paper/live production.
-
-## Product direction
-
-The product direction is built around five capabilities:
-
-1. **Canonical market state** — preserve the actual market events used by the system.
-2. **Same decision runtime** — avoid separate live and replay strategy implementations.
-3. **Deterministic replay** — reconstruct what the engine knew and why it acted.
-4. **Fail-closed execution authority** — stale, incomplete or disconnected state should remove permission to act.
-5. **Broker-truth reconciliation** — intent is not execution truth until the external system confirms the outcome.
+- professional research teams moving strategies from simulation to paper and live production.
 
 ## Vision
 
@@ -95,10 +94,10 @@ The long-term vision is:
 
 > **Make production assurance a standard layer of algorithmic and AI trading.**
 
-The strategy can change. The requirement to know what the system saw, why it acted, whether it can be reproduced, and what the broker actually did does not.
+The strategy can change. The obligation to know what the system saw, why it acted, whether the decision can be reproduced, and what the broker actually did does not.
 
 ## Public disclosure boundary
 
 The public page intentionally avoids publishing proprietary strategy mathematics, private runtime implementation details, credentials, customer information, investor materials and unsupported return claims.
 
-Public evidence is described as engineering evidence, with its limits stated explicitly.
+Public evidence is described as engineering evidence with its limitations stated explicitly.
