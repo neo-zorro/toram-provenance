@@ -40,17 +40,20 @@ jobs:
           test -s _site/404.html
           test -s _site/styles.css
           grep -Fq "FINANCIAL-MARKET INTELLIGENT INFRASTRUCTURE" _site/index.html
-          grep -Fq "Backtests are cheap." _site/index.html
-          grep -Fq "Production certainty is not." _site/index.html
+          grep -Fq "Trading intelligence is only useful if" _site/index.html
+          grep -Fq "production behaves as intended." _site/index.html
           grep -Fq "THE PRODUCTION GAP" _site/index.html
-          grep -Fq "THE TORAM RUNTIME" _site/index.html
+          grep -Fq "THE TORAM PRODUCT LAYER" _site/index.html
+          grep -Fq "WHY NOT A FREE BACKTESTER?" _site/index.html
           grep -Fq "TORAM starts where the backtest stops." _site/index.html
-          grep -Fq "Canonical market state" _site/index.html
-          grep -Fq "Deterministic replay" _site/index.html
-          grep -Fq "Fail-closed authority" _site/index.html
-          grep -Fq "Broker reconciliation" _site/index.html
+          grep -Fq "Canonical causal state" _site/index.html
+          grep -Fq "Same decision path" _site/index.html
+          grep -Fq "Live/replay forensic parity" _site/index.html
+          grep -Fq "Fail-closed external action" _site/index.html
           grep -Fq "74,519" _site/index.html
           grep -Fq "18 / 18" _site/index.html
+          grep -Fq "53 / 53" _site/index.html
+          grep -Fq "39 / 39" _site/index.html
           grep -Fq "QUANT & PROP DESKS" _site/index.html
           grep -Fq "ALGO PROVIDERS" _site/index.html
           grep -Fq "BROKERS & TRADING TECH" _site/index.html
@@ -62,7 +65,6 @@ jobs:
           ! grep -Fq "INVESTOR DILIGENCE" _site/index.html
           ! grep -Fq "PRE-SEED" _site/index.html
           ! grep -Fq "BUSINESS MODEL" _site/index.html
-          ! grep -Fq "€1.5M" _site/index.html
           ! grep -Fq "TORAM-MAIN" _site/index.html
           ! grep -Fq "TORAM-Market-Recorder" _site/index.html
           ! grep -Fq "CloudExecution" _site/index.html
@@ -70,4 +72,4 @@ jobs:
           ! grep -Fq "HMAC" _site/index.html
           ! grep -Fq "QuestDB" _site/index.html
           grep -q "\\.bg-slate-950" _site/styles.css
-          echo "Public site validated as financial-market intelligent infrastructure, product-led, non-investor and implementation-safe."
+          echo "Public site validated as financial-market intelligent infrastructure, production-assurance led, non-investor and implementation-safe."
