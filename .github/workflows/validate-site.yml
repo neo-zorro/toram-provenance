@@ -39,39 +39,35 @@ jobs:
           test -s _site/index.html
           test -s _site/404.html
           test -s _site/styles.css
-          grep -Fq "THE ANSWER SHOULD HAVE TO PROVE ITSELF" _site/index.html
-          grep -Fq "An answer should not win because it ranked first." _site/index.html
-          grep -Fq "Reach is not authority." _site/index.html
-          grep -Fq "THE AUTHORITY CYCLE" _site/index.html
-          grep -Fq "Build the system that makes the claim earn its authority." _site/index.html
-          grep -Fq "THE AUTHORITY LAYER" _site/index.html
-          grep -Fq "Do not own truth. Own the proof that lets people judge it." _site/index.html
-          grep -Fq "REVIEWS" _site/index.html
-          grep -Fq "PRODUCT CLAIMS" _site/index.html
-          grep -Fq "POSTS & MESSAGES" _site/index.html
-          grep -Fq "IMAGES & VIDEO" _site/index.html
-          grep -Fq "AI NARRATIVES" _site/index.html
-          grep -Fq "The moat is the authority graph." _site/index.html
-          grep -Fq "What are the top schools in Chennai?" _site/index.html
-          grep -Fq "AI DOES THE HEAVY LIFTING. EVIDENCE EARNS THE AUTHORITY." _site/index.html
-          grep -Fq "Reach can spread a claim. Only evidence should strengthen its authority." _site/index.html
-          ! grep -Fiq "BANKNIFTY" _site/index.html
-          ! grep -Fiq "NIFTY" _site/index.html
-          ! grep -Fiq "finance" _site/index.html
-          ! grep -Fiq "financial" _site/index.html
-          ! grep -Fiq "trading" _site/index.html
-          ! grep -Fiq "broker" _site/index.html
+          grep -Fq "FINANCIAL-MARKET INTELLIGENT INFRASTRUCTURE" _site/index.html
+          grep -Fq "Backtests are cheap." _site/index.html
+          grep -Fq "Production certainty is not." _site/index.html
+          grep -Fq "THE PRODUCTION GAP" _site/index.html
+          grep -Fq "THE TORAM RUNTIME" _site/index.html
+          grep -Fq "TORAM starts where the backtest stops." _site/index.html
+          grep -Fq "Canonical market state" _site/index.html
+          grep -Fq "Deterministic replay" _site/index.html
+          grep -Fq "Fail-closed authority" _site/index.html
+          grep -Fq "Broker reconciliation" _site/index.html
+          grep -Fq "74,519" _site/index.html
+          grep -Fq "18 / 18" _site/index.html
+          grep -Fq "QUANT & PROP DESKS" _site/index.html
+          grep -Fq "ALGO PROVIDERS" _site/index.html
+          grep -Fq "BROKERS & TRADING TECH" _site/index.html
+          grep -Fq "THE VISION" _site/index.html
+          grep -Fq "Make production assurance a standard layer of algorithmic and AI trading." _site/index.html
+          ! grep -Fq "Top schools in Chennai" _site/index.html
+          ! grep -Fq "The moat is the authority graph" _site/index.html
+          ! grep -Fq "I COMMERCIALIZED THIS" _site/index.html
           ! grep -Fq "INVESTOR DILIGENCE" _site/index.html
-          ! grep -Fq "Investors" _site/index.html
-          ! grep -Fq "SEED" _site/index.html
-          ! grep -Fq "BUSINESS MODEL" _site/index.html
           ! grep -Fq "PRE-SEED" _site/index.html
+          ! grep -Fq "BUSINESS MODEL" _site/index.html
+          ! grep -Fq "€1.5M" _site/index.html
           ! grep -Fq "TORAM-MAIN" _site/index.html
           ! grep -Fq "TORAM-Market-Recorder" _site/index.html
           ! grep -Fq "CloudExecution" _site/index.html
           ! grep -Fq "WebSocket" _site/index.html
-          ! grep -Fq "WAL" _site/index.html
           ! grep -Fq "HMAC" _site/index.html
           ! grep -Fq "QuestDB" _site/index.html
           grep -q "\\.bg-slate-950" _site/styles.css
-          echo "Public site validated as authority-layer, domain-neutral, non-investor and non-technical."
+          echo "Public site validated as financial-market intelligent infrastructure, product-led, non-investor and implementation-safe."
